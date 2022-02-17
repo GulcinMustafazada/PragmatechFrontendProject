@@ -1,0 +1,56 @@
+.products-item {
+    height: 100%;
+    width: 100%;
+    margin: 15px;
+}
+
+.product-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-name {
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    margin-bottom: 5px;
+    line-height: 1.8em;
+    color: var(--secondary-color)
+}
+
+.star-rating {
+    overflow: hidden;
+    position: relative;
+    font-size: 11px;
+    height: 18px;
+    line-height: 18px;
+    width: 6em;
+    font-family: star;
+    letter-spacing: 2px;
+    margin: 0px auto;
+    margin-bottom: 7px;
+    margin-left: 0px;
+}
+
+.deleted-price {
+    color: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: line-through;
+    letter-spacing: 0.6px;
+}
+
+.price {
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    font-weight: 600;
+    color: var(--dark-color);
+    font-size: 1.2em;
+}
+
+h3:hover {
+    color: var(--main-color);
+}
+
+.products-item:hover {
+    box-shadow: 0.5px#ebe9eb;
+}

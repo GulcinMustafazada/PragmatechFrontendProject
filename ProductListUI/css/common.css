@@ -1,0 +1,25 @@
+:root {
+    --main-color: #ebb5ac;
+    --secondary-color: #515151;
+    --dark-color: #000;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #888888;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
