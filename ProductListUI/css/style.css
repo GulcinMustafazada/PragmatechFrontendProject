@@ -5,6 +5,14 @@
     position: relative;
 }
 
+.products-item:hover {
+    padding: 10px;
+    border: 1px solid #BFBFBF;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 3px 3px #aaaaaa;
+    border-radius: 1px;
+}
+
 .product-img {
     position: relative;
 }
@@ -24,6 +32,7 @@
 
 .product-discount {
     position: absolute;
+    z-index: 100;
     bottom: 13px;
     right: 10px;
     width: 30px;
@@ -89,6 +98,7 @@
     background-color: var(--white-color);
     border-radius: 50%;
     padding: 10px;
+    z-index: 100;
 }
 
 .product-block:hover {
@@ -102,6 +112,17 @@
     cursor: pointer;
     height: 40px;
     visibility: hidden;
+}
+
+.product-block-copy {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 100;
 }
 
 .product-block-outer {
