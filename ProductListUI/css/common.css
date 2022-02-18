@@ -24,3 +24,11 @@ body {
 .justify-content-between {
     justify-content: space-between;
 }
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.display-none {
+    display: none;
+}
