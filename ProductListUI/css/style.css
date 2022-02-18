@@ -4,6 +4,27 @@
     margin: 15px;
 }
 
+.product-img {
+    position: relative;
+}
+
+.product-discount {
+    position: absolute;
+    bottom: 13px;
+    right: 10px;
+    width: 30px;
+    height: 13px;
+    line-height: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    padding: 5px 8px;
+    border: none;
+    background-color: #f34723;
+    color: var(--white-color);
+    font-size: 0.9em;
+    text-align: center;
+}
+
 .product-img img {
     width: 100%;
     object-fit: cover;
