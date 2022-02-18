@@ -14,7 +14,7 @@
     letter-spacing: 0.6px;
     margin-bottom: 5px;
     line-height: 1.8em;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 .star-rating {
@@ -32,7 +32,6 @@
 }
 
 .deleted-price {
-    color: #888888;
     font-weight: 300;
     font-size: 16px;
     text-decoration: line-through;
@@ -45,6 +44,34 @@
     font-weight: 600;
     color: var(--dark-color);
     font-size: 1.2em;
+}
+
+.product-block-outer {
+    display: inline-block;
+    width: 100%;
+    padding-top: 5px;
+}
+
+.product-btn {
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--dark-color);
+    border: none;
+    display: block;
+    position: relative;
+    font-size: 1em;
+    line-height: 22px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    padding: 10px 29px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all .3s ease;
+}
+
+.product-btn:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
 }
 
 h3:hover {
