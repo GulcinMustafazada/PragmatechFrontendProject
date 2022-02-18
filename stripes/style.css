@@ -1,0 +1,19 @@
+.module {
+    background: white;
+    border: 1px solid #ccc;
+    margin: 3%;
+}
+
+h2 {
+    padding: 1rem;
+    margin: 0 0 0.5rem 0;
+}
+
+p {
+    padding: 0 1rem;
+}
+
+.stripe-1 {
+    color: white;
+    background: repeating-linear-gradient( 45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px);
+}
