@@ -3,13 +3,14 @@
     width: 100%;
     margin: 15px;
     position: relative;
+    transition: all .1s ease;
 }
 
 .products-item:hover {
     padding: 10px;
     border: 1px solid #BFBFBF;
     background-color: var(--white-color);
-    box-shadow: 1px 1px 3px 3px #aaaaaa;
+    box-shadow: 1px 1px 2px 2px #c9c7c7;
     border-radius: 1px;
 }
 
@@ -73,6 +74,7 @@
     margin: 0px auto;
     margin-bottom: 7px;
     margin-left: 0px;
+    width: 91px;
 }
 
 .deleted-price {
@@ -118,6 +120,7 @@
 
 .products-item:hover .product-block-hover {
     display: inline;
+    transform: translate3d(0, 0, 0);
 }
 
 .product-block-hover .fa-solid {
@@ -137,11 +140,7 @@
     display: block;
 }
 
-.product-block-hover .fa-solid :hover {
-    background-color: var(--main-color);
-}
-
-.product-block-hover .fa-regular :hover {
+.product-block-hover :hover {
     background-color: var(--main-color);
 }
 
