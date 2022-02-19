@@ -111,18 +111,38 @@
     right: 15px;
     cursor: pointer;
     height: 40px;
-    visibility: hidden;
+    margin: 15px 0px;
+    display: none;
+    z-index: 99;
 }
 
-.product-block-copy {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+.products-item:hover .product-block-hover {
+    display: inline;
+}
+
+.product-block-hover .fa-solid {
     cursor: pointer;
     background-color: var(--white-color);
     border-radius: 50%;
     padding: 10px;
-    z-index: 100;
+    margin: 10px 0px;
+    display: block;
+}
+
+.product-block-hover .fa-regular {
+    cursor: pointer;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    padding: 10px;
+    display: block;
+}
+
+.product-block-hover .fa-solid :hover {
+    background-color: var(--main-color);
+}
+
+.product-block-hover .fa-regular :hover {
+    background-color: var(--main-color);
 }
 
 .product-block-outer {
