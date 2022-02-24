@@ -1,0 +1,83 @@
+:root {
+    --container-width: 1200px;
+    --main-color: #ee12a0;
+    --secondary-color: #d71a94;
+    --white-color: #fff;
+    --dark-color: #333;
+}
+
+.container {
+    width: var(--container-width);
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'Droid Sans', sans-serif;
+    color: var(--dark-color);
+    margin-top: 100px;
+}
+
+.container-item {
+    position: relative;
+    padding: 70px 0px;
+    margin: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    background: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+    padding: 0px 15px;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px 0 20px;
+    padding: 14px 35px;
+    color: var(--white-color);
+    border-radius: 40px;
+    background: var(--main-color);
+    text-decoration: none;
+}
+
+.fa {
+    color: var(--white-color);
+    background-color: var(--main-color);
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    height: 110px;
+    margin: 20px 0;
+    text-align: center;
+    transition: all .4s ease;
+    transform: translateX(-50%);
+    border: 1px solid var(--main-color);
+    border-radius: 100%;
+    font-size: 52px;
+    line-height: 107px;
+    width: 110px;
+}
+
+.container-item:hover {
+    color: var(--white-color);
+    background-color: var(--main-color);
+}
+
+.container-item:hover .btn {
+    background-color: var(--secondary-color);
+}
+
+.container-item:hover .fa {
+    color: var(--main-color);
+    background-color: var(--white-color);
+    border: none;
+}
