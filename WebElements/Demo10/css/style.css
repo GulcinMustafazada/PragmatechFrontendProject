@@ -22,7 +22,7 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 40px 0px;
-  margin: 0px 10px;
+  margin: 0px 15px;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -40,7 +40,7 @@
 .container .container-item p {
   color: #fff;
   font-size: 15px;
-  padding: 0px 30px;
+  padding: 0px 20px;
   text-align: center;
 }
 
@@ -66,6 +66,6 @@
   transition: all .3s ease;
 }
 
-.container .container-item .btn :hover {
+.container .container-item a:hover {
   background: #361eb7;
 }
