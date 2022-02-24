@@ -1,59 +1,79 @@
- $container-width:1200px;
- $main-color:orange;
- $white-color:#fff;
- $dark-color:#333;
- $space-x:5px;
- $space-2x:$space-x*2;
- $space-3x:$space-x*3;
- $space-4x:$space-x*4;
- $space-6x:$space-x*6;
- $space-7x:$space-x*7;
- $space-8x:$space-x*8;
- .container {
-     width: $container-width;
-     display: flex;
-     margin: 0 auto;
-     height: $container-width/3-$space-3x;
-     font-family: 'Droid Sans', sans-serif;
-     margin-top: 100px;
-     .container-item {
-         border: 1px solid $white-color;
-         background-color: $white-color;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         margin: 0px 15px;
-         transition: all .3s ease;
-         box-shadow: 1px 2px 10px rgb(0 0 0 / 18%);
-         .fa {
-             font-size: 52px;
-             margin: $space-4x 0;
-             color: $main-color;
-             background: $white-color;
-             text-align: center;
-             border: 3px solid $main-color;
-             border-radius: 50%;
-             padding: 25px;
-             box-sizing: border-box;
-         }
-         h2 {
-             color: $dark-color;
-             font-weight: 700;
-             font-size: $space-6x
-         }
-         p {
-             font-size: $space-3x;
-             padding: 0px $space-4x;
-             text-align: center;
-             color: lighten($dark-color, 30%)
-         }
-         .btn {
-             margin: $space-2x 0 $space-4x;
-             padding: $space-3x $space-7x;
-             color: $white-color;
-             background: $main-color;
-             text-decoration: none;
-             transition: all .3s ease;
-         }
-     }
- }
+$container-width:1200px;
+$main-color:orange;
+$white-color:#fff;
+$dark-color:#333;
+$space-x:5px;
+$space-2x:$space-x*2;
+$space-3x:$space-x*3;
+$space-4x:$space-x*4;
+$space-6x:$space-x*6;
+$space-7x:$space-x*7;
+$space-8x:$space-x*8;
+.container {
+    width: $container-width;
+    display: flex;
+    margin: 0 auto;
+    height: $container-width/3-$space-3x;
+    font-family: 'Droid Sans', sans-serif;
+    margin-top: 100px;
+    .container-item {
+        border: 1px solid $white-color;
+        background-color: $white-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 15px;
+        transition: all .3s ease;
+        box-shadow: 0px 0px 3px 3px lighten($dark-color, 70%);
+        position: relative;
+    }
+    .container-item::after {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+        height: 0;
+        transition: all .4s ease;
+        background: orange;
+    }
+    & .container-item:hover::after {
+        height: 100%;
+        transition: all .4s linear;
+    }
+    .fa {
+        font-size: 52px;
+        margin: $space-4x 0;
+        width: 130px;
+        height: 130px;
+        line-height: 120px;
+        color: $main-color;
+        background: $white-color;
+        text-align: center;
+        border: 3px solid $main-color;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    h2 {
+        color: $dark-color;
+        font-weight: 700;
+        font-size: $space-6x
+    }
+    p {
+        font-size: $space-3x;
+        padding: 0px $space-4x;
+        text-align: center;
+        color: lighten($dark-color, 30%)
+    }
+    .btn {
+        margin: $space-2x 0 $space-4x;
+        padding: $space-3x $space-7x;
+        color: $white-color;
+        background: $main-color;
+        text-decoration: none;
+        transition: all .3s ease;
+    }
+}

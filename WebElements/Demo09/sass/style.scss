@@ -38,6 +38,9 @@ $space-8x:$space-x*8;
         .fa {
             font-size: 52px;
             margin: $space-4x 0;
+            width: 130px;
+            height: 130px;
+            line-height: 120px;
             color: $main-color;
             background: $white-color;
             text-align: center;
