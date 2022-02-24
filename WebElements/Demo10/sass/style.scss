@@ -1,0 +1,64 @@
+$container-width:1200px;
+$main-color:rgb(129, 110, 231);
+$secondary-color:#816ee7;
+$white-color:#fff;
+$space-x:5px;
+$space-2x:$space-x*2;
+$space-3x:$space-x*3;
+$space-4x:$space-x*4;
+$space-6x:$space-x*6;
+$space-7x:$space-x*7;
+$space-8x:$space-x*8;
+.container {
+    width: $container-width;
+    display: flex;
+    margin: 0 auto;
+    height: $container-width/3-$space-3x;
+    font-family: 'Droid Sans', sans-serif;
+    .container-item {
+        border: 2px solid $main-color;
+        background-color: $main-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 40px 0px;
+        margin: 0px 10px;
+        transition: all .3s ease;
+        &:hover {
+            border-radius: 0px 40px;
+        }
+        h2 {
+            font-weight: 700;
+            color: $white-color;
+            font-size: $space-6x
+        }
+        p {
+            color: $white-color;
+            font-size: $space-3x;
+            padding: 0px $space-6x;
+            text-align: center;
+        }
+        .fa {
+            font-size: 52px;
+            line-height: 120px;
+            height: 130px;
+            width: 100%;
+            margin: $space-4x 0;
+            color: darken($secondary-color, 15%);
+            background: $white-color;
+            text-align: center;
+        }
+        .btn {
+            margin: $space-2x 0 $space-4x;
+            padding: $space-3x $space-7x;
+            color: $white-color;
+            border-radius: 40px;
+            background: darken($secondary-color, 15%);
+            text-decoration: none;
+            transition: all .3s ease;
+            & :hover {
+                background: darken($secondary-color, 25%);
+            }
+        }
+    }
+}
