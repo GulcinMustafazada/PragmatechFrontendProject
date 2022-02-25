@@ -1,0 +1,81 @@
+:root {
+    --container-width: 1200px;
+    --main-color: #ff4343;
+    --secondary-color: #e33939;
+    --gray-color: #919191;
+    --white-color: #fff;
+    --dark-color: #333;
+}
+
+.container {
+    width: var(--container-width);
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    font-family: 'Droid Sans', sans-serif;
+    color: var(--dark-color);
+    margin-top: 100px;
+}
+
+.container-item {
+    position: relative;
+    padding: 40px 0px;
+    margin: 15px;
+    border: 1px solid var(--main-color);
+    background: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--dark-color);
+    background: linear-gradient(to right, #edf4f3 50%, #ff4343 50%);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    background-size: 200% 100%;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 15px;
+    padding: 0px 15px;
+    text-align: center;
+    color: var(--gray-color)
+}
+
+.btn {
+    margin: 10px 0 0px;
+    padding: 14px 35px;
+    color: var(--white-color);
+    border-radius: 40px;
+    background: var(--main-color);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.fa {
+    color: var(--main-color);
+    background-color: var(--white-color);
+    height: 110px;
+    text-align: center;
+    transition: all .4s ease;
+    border-radius: 100%;
+    font-size: 52px;
+    line-height: 100px;
+    width: 110px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 5px 5px 3px #ddd;
+}
+
+.container-item:hover .fa {
+    box-shadow: 5px 5px 3px #ddd;
+}
