@@ -7,6 +7,10 @@
     --dark-color: #333;
 }
 
+body {
+    background-color: #edf4f3;
+}
+
 .container {
     width: var(--container-width);
     display: flex;
@@ -21,7 +25,6 @@
     position: relative;
     padding: 40px 0px;
     margin: 15px;
-    border: 1px solid var(--main-color);
     background: var(--white-color);
     display: flex;
     flex-direction: column;
@@ -77,5 +80,10 @@ p {
 }
 
 .container-item:hover .fa {
-    box-shadow: 5px 5px 3px #ddd;
+    box-shadow: -5px 7px 3px #ddd;
+}
+
+.container-item:hover h2 {
+    color: var(--white-color);
+    background-position: right;
 }
