@@ -43,6 +43,8 @@ h2 {
     padding: 10px 0px;
     background-size: 200% 100%;
     box-sizing: border-box;
+    background-position: left;
+    transition: all .4s ease
 }
 
 p {
