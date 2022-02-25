@@ -24,6 +24,8 @@
     align-items: center;
     margin: 0px 15px;
     position: relative;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .container .container-item h2 {

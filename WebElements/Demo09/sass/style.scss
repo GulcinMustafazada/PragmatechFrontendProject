@@ -24,6 +24,7 @@ $space-8x:$space-x*8;
         margin: 0px 15px;
         position: relative;
         padding-top: 70px;
+        transition: all .3s ease;
         h2 {
             font-weight: 700;
             color: $dark-color;
@@ -61,7 +62,7 @@ $space-8x:$space-x*8;
         & a:hover {
             background: darken($main-color, 15%);
         }
-        & fa :hover {
+        & :hover .fa {
             background-color: darken($main-color, 15%);
             color: $white-color;
         }
