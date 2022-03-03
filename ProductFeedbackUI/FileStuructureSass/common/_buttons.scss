@@ -1,0 +1,72 @@
+@import url(general/colors);
+.button1 {
+    height: 44px;
+    width: 158px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: $purple-color;
+    border-radius: 10px;
+    &:hover {
+        background-color: $light-purple-color;
+    }
+}
+
+.button2 {
+    height: 44px;
+    width: 158px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: $blue-color;
+    border-radius: 10px;
+    &:hover {
+        background-color: #7C91F9;
+    }
+}
+
+.button3 {
+    height: 44px;
+    width: 158px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: $dark-blue-color;
+    border-radius: 10px;
+    &:hover {
+        background-color: $dark-gray-color;
+    }
+}
+
+.button4 {
+    height: 44px;
+    width: 158px;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: $red-color;
+    border-radius: 10px;
+    &:hover {
+        background-color: #E98888;
+    }
+}
