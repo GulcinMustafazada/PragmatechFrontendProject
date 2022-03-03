@@ -12,6 +12,37 @@
     top: 94px;
     background: $mixed-colors;
     border-radius: 10px;
+    h6 {
+        position: absolute;
+        height: 29px;
+        left: 0%;
+        right: -0.65%;
+        top: calc(50% - 29px/2 - 11px);
+        font-family: Jost;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 29px;
+        /* identical to box height */
+        letter-spacing: -0.25px;
+        color: #FFFFFF;
+    }
+    .feedback-head-item p {
+        position: absolute;
+        height: 22px;
+        left: 0%;
+        right: 29.41%;
+        top: calc(50% - 22px/2 + 14.5px);
+        font-family: Jost;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+    }
 }
 
 .feedback-nav-items {
