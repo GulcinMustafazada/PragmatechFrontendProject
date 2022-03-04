@@ -170,25 +170,68 @@ body {
 }
 
 .menu .button1 {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  float: right;
   background: #C75AF6;
   border-radius: 10px;
   color: #FFFFFF;
   width: 158px;
   height: 44px;
+  border: none;
 }
 
-.elements {
-  position: relative;
+.element {
+  position: absolute;
   width: 825px;
-  height: 151px;
+  height: 600px;
   left: 450px;
   top: 190px;
   background: #FFFFFF;
   border-radius: 10px;
-  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.element h3 {
+  font-family: Jost;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: -0.333333px;
+  color: #3A4374;
+}
+
+.element p {
+  top: calc(50% - 46px/2 - 20.5px);
+  font-family: Jost, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #647196;
+  height: 46px;
+  width: 410px;
+}
+
+.element .button1 {
+  background: #C75AF6;
+  border-radius: 10px;
+  width: 158px;
+  height: 44px;
+  color: #F2F4FE;
+  border: none;
 }
