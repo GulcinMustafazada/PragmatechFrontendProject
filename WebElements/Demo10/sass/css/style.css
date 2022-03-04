@@ -1,0 +1,71 @@
+.container {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  height: 385px;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+.container .container-item {
+  border: 2px solid #816ee7;
+  background-color: #816ee7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 40px 0px;
+  margin: 0px 15px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.container .container-item:hover {
+  border-radius: 0px 40px;
+}
+
+.container .container-item h2 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 30px;
+}
+
+.container .container-item p {
+  color: #fff;
+  font-size: 15px;
+  padding: 0px 20px;
+  text-align: center;
+}
+
+.container .container-item .fa {
+  font-size: 52px;
+  line-height: 120px;
+  height: 130px;
+  width: 100%;
+  margin: 20px 0;
+  color: #482cdc;
+  background: #fff;
+  text-align: center;
+}
+
+.container .container-item .btn {
+  margin: 10px 0 20px;
+  padding: 15px 35px;
+  color: #fff;
+  border-radius: 40px;
+  background: #482cdc;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.container .container-item a:hover {
+  background: #361eb7;
+}
