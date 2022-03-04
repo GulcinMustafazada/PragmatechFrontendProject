@@ -124,6 +124,10 @@
                     right: 81.47%;
                     top: 23.06%;
                     bottom: -15.36%;
+                    height: 24px;
+                    width: 23px;
+                    border-radius: 0px;
+                    background: #373F68;
                     color: #FFFFFF;
                 }
                 h3 {
@@ -137,9 +141,13 @@
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 26px;
-                    /* identical to box height */
                     letter-spacing: -0.25px;
                     color: #FFFFFF;
+                    height: 26px;
+                    width: 117px;
+                    left: 39px;
+                    top: 0px;
+                    border-radius: nullpx;
                 }
                 p {
                     position: absolute;
@@ -153,14 +161,17 @@
                     font-size: 14px;
                     line-height: 20px;
                     color: #F2F4FE;
-                    mix-blend-mode: normal;
-                    opacity: 0.75;
+                    height: 20px;
+                    width: 143px;
+                    left: 0px;
+                    top: 0px;
+                    border-radius: nullpx;
                 }
             }
             .button1 {
                 // position: absolute;
                 // left: 0%;
-                // right: 0%;
+                // right: 70%;
                 // top: 50%;
                 // bottom: 0%;
                 float: right;
