@@ -1,5 +1,6 @@
+@import 'colors';
 body {
-    background-color: #F2F2F2;
+    background-color: $light-gray-color;
 }
 
 .feedback-head-item {
@@ -8,7 +9,7 @@ body {
     height: 137px;
     left: 165px;
     top: 94px;
-    background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%);
+    background: $mixed-colors;
     border-radius: 10px;
     h3 {
         position: absolute;
@@ -22,7 +23,7 @@ body {
         font-size: 20px;
         line-height: 29px;
         letter-spacing: -0.25px;
-        color: #FFFFFF;
+        color: $white-color;
     }
     p {
         position: absolute;
@@ -35,7 +36,7 @@ body {
         font-weight: 500;
         font-size: 15px;
         line-height: 22px;
-        color: #FFFFFF;
+        color: $white-color;
         mix-blend-mode: normal;
         opacity: 0.75;
     }
@@ -47,13 +48,13 @@ body {
     height: 166px;
     left: 165px;
     top: 255px;
-    background: #FFFFFF;
+    background: $white-color;
     border-radius: 10px;
     .active-navbar-nav {
         position: absolute;
         left: 10%;
         top: 10%;
-        background: #4661E6;
+        background: $blue-color;
         border-radius: 10px;
         height: 30px;
         width: 48px;
@@ -71,8 +72,7 @@ body {
             font-weight: 600;
             font-size: 13px;
             line-height: 19px;
-            /* identical to box height */
-            color: #FFFFFF;
+            color: $white-color;
         }
     }
     .navbar-nav {
@@ -81,7 +81,7 @@ body {
         right: 0%;
         top: 0%;
         bottom: 0%;
-        background: #CFD7FF;
+        background: $secondary-gray-color;
         border-radius: 10px;
         p {
             position: absolute;
@@ -94,7 +94,7 @@ body {
             font-weight: 600;
             font-size: 13px;
             line-height: 19px;
-            color: #4661E6;
+            color: $blue-color;
         }
     }
 }
@@ -105,7 +105,7 @@ body {
     height: 178px;
     left: 165px;
     top: 445px;
-    background: #FFFFFF;
+    background: $white-color;
     border-radius: 10px;
     h3 {
         position: absolute;
@@ -118,9 +118,8 @@ body {
         font-weight: bold;
         font-size: 18px;
         line-height: 26px;
-        /* identical to box height */
         letter-spacing: -0.25px;
-        color: #3A4374;
+        color: $dark-blue-color;
         height: 26px;
         width: 78px;
     }
@@ -136,7 +135,7 @@ body {
         line-height: 19px;
         /* identical to box height */
         text-decoration-line: underline;
-        color: #4661E6;
+        color: $blue-color;
         mix-blend-mode: normal;
         opacity: 0.25;
     }
@@ -155,7 +154,7 @@ body {
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 23px;
-                color: #647196;
+                color: $light-blue-color;
             }
             img {
                 height: 8px;
@@ -173,7 +172,7 @@ body {
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 23px;
-                color: #647196;
+                color: $light-blue-color;
             }
         }
     }
@@ -185,7 +184,7 @@ body {
     height: 72px;
     left: 450px;
     top: 94px;
-    background: #373F68;
+    background: $secondary-dark-blue-color;
     border-radius: 10px;
     // display: flex;
     // align-items: center;
@@ -196,8 +195,8 @@ body {
             height: 24px;
             width: 23px;
             border-radius: 0px;
-            background: #373F68;
-            color: #FFFFFF;
+            background: $secondary-dark-blue-color;
+            color: $white-color;
             margin: 30px 20px 20px 20px;
         }
         h3 {
@@ -207,7 +206,7 @@ body {
             font-size: 18px;
             line-height: 26px;
             letter-spacing: -0.25px;
-            color: #FFFFFF;
+            color: $white-color;
             height: 26px;
             width: 117px;
         }
@@ -217,7 +216,7 @@ body {
             font-weight: normal;
             font-size: 14px;
             line-height: 20px;
-            color: #F2F4FE;
+            color: $light-gray-color;
             height: 20px;
             width: 143px;
         }
@@ -232,9 +231,9 @@ body {
         position: absolute;
         top: 15px;
         right: 2%;
-        background: #C75AF6;
+        background: $purple-color;
         border-radius: 10px;
-        color: #FFFFFF;
+        color: $white-color;
         width: 158px;
         height: 44px;
         border: none;
@@ -247,7 +246,7 @@ body {
     height: 600px;
     left: 450px;
     top: 190px;
-    background: #FFFFFF;
+    background: $white-color;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -267,7 +266,7 @@ body {
         /* identical to box height */
         text-align: center;
         letter-spacing: -0.333333px;
-        color: #3A4374;
+        color: $dark-blue-color;
     }
     p {
         // position: absolute;
@@ -281,7 +280,7 @@ body {
         font-size: 16px;
         line-height: 23px;
         text-align: center;
-        color: #647196;
+        color: $light-blue-color;
         height: 46px;
         width: 410px;
     }
@@ -291,11 +290,11 @@ body {
         // right: 0%;
         // top: 0%;
         // bottom: 0%;
-        background: #C75AF6;
+        background: $purple-color;
         border-radius: 10px;
         width: 158px;
         height: 44px;
-        color: #F2F4FE;
+        color: $light-gray-color;
         border: none;
     }
 }
