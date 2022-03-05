@@ -77,7 +77,6 @@ body {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
-  /* identical to box height */
   color: #FFFFFF;
 }
 
@@ -126,7 +125,6 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  /* identical to box height */
   letter-spacing: -0.25px;
   color: #3A4374;
   height: 26px;
@@ -243,7 +241,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #F2F4FE;
+  color: #F2F2F2;
   height: 20px;
   width: 143px;
 }
@@ -314,6 +312,6 @@ body {
   border-radius: 10px;
   width: 158px;
   height: 44px;
-  color: #F2F4FE;
+  color: #F2F2F2;
   border: none;
 }
