@@ -16,6 +16,13 @@
 
 
 * d)*javascriptdə dəyişən təyin edilmək üçün əsas üç açar söz var . let,var,const. Bu açar sözlərin vəzifələri arasındakı fərqlər nələrdir?*
+
+
+   Let-let açar sözündə eyni adda bir dəyişənə iki fərqli dəyər vermək olmaz. Əvvəlcə dəyişən təyin olunur,sonra istifadə olunur.
+
+   var- açar sözündə isə eyni dəyişənə  başqa bir dəyər də vermək olur.
+    
+   const-açar sözü sabitdir.Yəni ki dəyişənin dəyəri sabit olur,yəni verdiyimiz dəyəri dəyişdirmək olmaz.
 * e)*Proqramçı olaraq bir proqram yazarkən işi görmə addımlarımız necə olmalıdır?*
 Bir proqram yazarkən bu 3 addımı yerinə yetirməliyik.
     
