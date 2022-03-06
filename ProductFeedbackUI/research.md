@@ -10,6 +10,7 @@
 
     Dəyişən- məlumat dəyərlərini saxlamaq üçün istifadə olunan qutulardır.
 
+    Məlumat növləri isə dəyərləri fərqləndirmək üçün istifadə olunur. Yəni məlumatları ,dəyərləri növlərə ayırmaq üçün  istifadə olunur.
 * c)*hər dilin özünə məxsus məlumat növləri mövcuddur. Bu məlumat növlərin dillərə görə fərqlənməsinin səbəbləri sizcə nədir?*
 
   Hər proqramlaşdırma dilində müxtəlif sayda data type lar olur.Bunun əsas səbəbi həmin dillərin compiler və ya interpreter dillər olması ilə əlaqədardır. Yəni compiler dillərdə əvvəldən müəyyən qaydalar olur. Hər hansı bir dəyər üçün dəyişən təyin edilərkən ona xüsusi data type olur və yaddaşda həmin data tipinə uyğun yer tutur. Əgər məlumatın ölçüsü yaddaşda tutlan yerdən  çox olarsa error çıxır. Ancaq interpreter dillərdə isə bu belə deyil. Yəni məlumatın ölçüsünü istədiyimiz kimi verə bilərik.Yəni ona uyğun yaddaşda yer tutur.
@@ -21,7 +22,7 @@
    Let-let açar sözündə eyni adda bir dəyişənə iki fərqli dəyər vermək olmaz. Əvvəlcə dəyişən təyin olunur,sonra istifadə olunur.
 
    var- açar sözündə isə eyni dəyişənə  başqa bir dəyər də vermək olur.
-    
+
    const-açar sözü sabitdir.Yəni ki dəyişənin dəyəri sabit olur,yəni verdiyimiz dəyəri dəyişdirmək olmaz.
 * e)*Proqramçı olaraq bir proqram yazarkən işi görmə addımlarımız necə olmalıdır?*
 Bir proqram yazarkən bu 3 addımı yerinə yetirməliyik.
