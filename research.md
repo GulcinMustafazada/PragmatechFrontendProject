@@ -21,6 +21,18 @@
        
        Javascriptdə komment yazmaq üçün 2 üsul  var. 
        Tək sətirdə komment yazmaq üçün // istifadə olunur.
-       Birdən çox sətirdə komment yazmaq üçün isə /* .... */ istifadə olunur. 
+       Birdən çox sətirdə komment yazmaq üçün isə /* .... */ istifadə olunur.
+
+3.  * let,var,const ifadələri arasında fərqlər nədir?
+      
+      let-əvvəlcə dəyişən təyin olunur sonra istifadə olunur. let açarsözü ilə eyni bir dəyişənə iki fərqli dəyər vermək olmaz.
+      var- açarsözü ilə eyni bir dəyişənə iki fərqli dəyər vermək olur.
+      const-sabitdir. Yəni burada dəyişənə verdiyimiz dəyər sabit qalır,dəyişdirilə bilmir.
+    * dəyişən təyin edərkən adlandırma qaydaları nələrdir?
+      
+      Dəyişənə verilən adlar rəqəmlə başlaya biməz. Dəyişən adlarında hərflər rəqəmlər və $,_ işlənə bilər. Əgər dəyişən adında birdən çox söz olarsa,onda camelCase adlandırma istifadə olunur.Yəni ilk sözün baş hərfi kiçik digərlərində isə böyük yazılır.
+    * let x=5;x=7 yazıldığı zaman nəticə 7 olur.Belə olan halda 5 dəyərinin aqibəti nə olur? Yaddaşda yer tutur mu 5 dəyəri yoxsa başqa proses mi gedir? 
+       
+       Burada əvvəlcə 5 üçün yaddaşda yer ayrılır.Sonra isə 7 üçün.Yəni 5 dəyəri dəyişəndən silinsədə yaddaşda ayırdığı yer qalır.
     
       
