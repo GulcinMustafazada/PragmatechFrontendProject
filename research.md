@@ -34,5 +34,5 @@
     * let x=5;x=7 yazıldığı zaman nəticə 7 olur.Belə olan halda 5 dəyərinin aqibəti nə olur? Yaddaşda yer tutur mu 5 dəyəri yoxsa başqa proses mi gedir? 
        
        Burada əvvəlcə 5 üçün yaddaşda yer ayrılır.Sonra isə 7 üçün.Yəni 5 dəyəri dəyişəndən silinsədə yaddaşda ayırdığı yer qalır.
-    
+    ...
       
