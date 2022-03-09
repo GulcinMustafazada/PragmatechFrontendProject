@@ -35,15 +35,23 @@
        
        Burada əvvəlcə 5 üçün yaddaşda yer ayrılır.Sonra isə 7 üçün.Yəni 5 dəyəri dəyişəndən silinsədə yaddaşda ayırdığı yer qalır.
 4.  * 5 dəyəri yaddasa yazılarkən 2-li say sisteminə çevrilir və ona görə yaddaşda tutduğu yer hesablanır.Bəs 5.34 dəyərinin yaddaşda tutduğu yeri necə hesablamaq olar?
+     Float ədədlərin yaddaşda yer tutması proqramdan asılıdır.32 bit proqram təminatı üçün 4 bayt 64 bit proqram təminatı üçün 8 bayt kimi.
 
     * undefined, NaN və null dəyərlərinin yaddaşda nə qədər yer tutduğunu araşdırın
 
       undefined və null yaddaşda yer tutur ,ancaq tutduqları yer boş olur. 
     Undefined nulldan daha uzun sətir olduğundan təhlil zamanı undefined istifadə olunanda yaddaşda 4 baytdan daha çox yer tutmalıdır.
     Null-Bu, 32-bit sistemlərdə 4 bayt və ya 64-bit sistemlərdə 8 bayt yer tutur .
+    NaN-float ədədlər kimi yaddaşda saxlanılır.
 
 
     * let a; bu formada dəyişən təyin etmişəm.
        - Bu dəyişən yaddaşda stack-da mı yoxsa heap-də mi yerləşir
+        Dəyişənlər əksər hallarda Ramın stack hissəsində yer tuturlar.
        - Bu dəyişən yaddaşda yer tuturmu? Tutursa nə qədər yer tutur?
+       Dəyişən yaddaşda yer tutur.
+
+5.   * Ümumiyyətlə sizə görə bir məlumat növünü başqa məlumat növünə çevirmək nəyə lazımdır?
+     * Type Conversion necə formada həyata keçirilir?
+     * Type Conversion metodlarının siyahısını çıxarın
       
