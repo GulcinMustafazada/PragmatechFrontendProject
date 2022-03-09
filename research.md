@@ -34,5 +34,16 @@
     * let x=5;x=7 yazıldığı zaman nəticə 7 olur.Belə olan halda 5 dəyərinin aqibəti nə olur? Yaddaşda yer tutur mu 5 dəyəri yoxsa başqa proses mi gedir? 
        
        Burada əvvəlcə 5 üçün yaddaşda yer ayrılır.Sonra isə 7 üçün.Yəni 5 dəyəri dəyişəndən silinsədə yaddaşda ayırdığı yer qalır.
-    ...
+4.  * 5 dəyəri yaddasa yazılarkən 2-li say sisteminə çevrilir və ona görə yaddaşda tutduğu yer hesablanır.Bəs 5.34 dəyərinin yaddaşda tutduğu yeri necə hesablamaq olar?
+
+    * undefined, NaN və null dəyərlərinin yaddaşda nə qədər yer tutduğunu araşdırın
+
+      undefined və null yaddaşda yer tutur ,ancaq tutduqları yer boş olur. 
+    Undefined nulldan daha uzun sətir olduğundan təhlil zamanı undefined istifadə olunanda yaddaşda 4 baytdan daha çox yer tutmalıdır.
+    Null-Bu, 32-bit sistemlərdə 4 bayt və ya 64-bit sistemlərdə 8 bayt yer tutur .
+
+
+    * let a; bu formada dəyişən təyin etmişəm.
+       - Bu dəyişən yaddaşda stack-da mı yoxsa heap-də mi yerləşir
+       - Bu dəyişən yaddaşda yer tuturmu? Tutursa nə qədər yer tutur?
       
