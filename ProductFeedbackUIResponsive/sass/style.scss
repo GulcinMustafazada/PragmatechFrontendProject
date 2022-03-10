@@ -1,46 +1,103 @@
-@import 'colors';
-@import 'reset';
-@import 'variables';
-@import 'typography';
-@import 'buttons';
-.feedback-roadmap-header {
-    box-sizing: border-box;
-    position: absolute;
-    width: 1110px;
-    height: 113px;
-    left: 130px;
-    top: 78px;
-    background-color: $main-color;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
-    .header-content {
-        .header-btn {
-            i {
-                color: $dark-gray-color;
-                font-size: 12px;
-                margin-right: 10px;
+    @import 'colors';
+    @import 'common';
+    @import 'reset';
+    @import 'variables';
+    @import 'typography';
+    @import 'buttons';
+    body {
+        background-color: $gray-color;
+    }
+    
+    .feedback-roadmap-header {
+        box-sizing: border-box;
+        position: relative;
+        width: 1110px;
+        height: 113px;
+        left: 130px;
+        top: 78px;
+        background-color: $main-color;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 40px;
+        .header-content {
+            .header-btn {
+                i {
+                    color: $dark-gray-color;
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+                a {
+                    text-decoration: none;
+                    // font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $white-color;
+                    &:hover {
+                        text-decoration-line: underline;
+                    }
+                }
             }
-            a {
-                text-decoration: none;
-                // font-family: 'Jost';
+            h1 {
+                // font-family: $font;
                 font-style: normal;
                 font-weight: 700;
-                font-size: 14px;
-                line-height: 20px;
+                font-size: 24px;
+                line-height: 35px;
+                letter-spacing: -0.333333px;
                 color: $white-color;
             }
         }
-        h1 {
-            // font-family: $font;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 35px;
-            letter-spacing: -0.333333px;
-            color: $white-color;
+    }
+    
+    .feedback-container {
+        width: 1110px;
+        border: 2px solid black;
+        height: 500px;
+        position: absolute;
+        top: calc(50% - 26px/2 - 13.5px);
+        left: 130px;
+        .container-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            h2 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: -0.25px;
+                color: $main-color;
+            }
+            p {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+            }
+        }
+        .container-elements {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 22px;
+            .container-plan-item {
+                border-top: 5px solid $orange-color;
+                height: 272px;
+                background-color: $white-color;
+            }
+            .container-progress-item {
+                border-top: 5px solid $secondary-color;
+                height: 272px;
+                background-color: $white-color;
+            }
+            .container-live-item {
+                border-top: 5px solid $blue-color;
+                height: 272px;
+                background-color: $white-color;
+            }
         }
     }
-}

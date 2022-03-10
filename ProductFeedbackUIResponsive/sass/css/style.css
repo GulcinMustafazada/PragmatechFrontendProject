@@ -1,3 +1,15 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
 body,
 h1 {
   padding: 0;
@@ -17,10 +29,14 @@ h1 {
   line-height: 20px;
 }
 
+body {
+  background-color: #F2F4FE;
+}
+
 .feedback-roadmap-header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
+  position: relative;
   width: 1110px;
   height: 113px;
   left: 130px;
@@ -54,6 +70,11 @@ h1 {
   color: #FFFFFF;
 }
 
+.feedback-roadmap-header .header-content .header-btn a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .feedback-roadmap-header .header-content h1 {
   font-style: normal;
   font-weight: 700;
@@ -61,4 +82,64 @@ h1 {
   line-height: 35px;
   letter-spacing: -0.333333px;
   color: #FFFFFF;
+}
+
+.feedback-container {
+  width: 1110px;
+  border: 2px solid black;
+  height: 500px;
+  position: absolute;
+  top: calc(50% - 26px/2 - 13.5px);
+  left: 130px;
+}
+
+.feedback-container .container-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feedback-container .container-header h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-header p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-elements {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 22px;
+}
+
+.feedback-container .container-elements .container-plan-item {
+  border-top: 5px solid #F49F85;
+  height: 272px;
+  background-color: #FFFFFF;
+}
+
+.feedback-container .container-elements .container-progress-item {
+  border-top: 5px solid #AD1FEA;
+  height: 272px;
+  background-color: #FFFFFF;
+}
+
+.feedback-container .container-elements .container-live-item {
+  border-top: 5px solid #62BCFA;
+  height: 272px;
+  background-color: #FFFFFF;
 }
