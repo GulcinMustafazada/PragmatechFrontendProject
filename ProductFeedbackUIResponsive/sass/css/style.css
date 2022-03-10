@@ -1,1 +1,48 @@
-/* No CSS */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.btn1 {
+  background-color: #AD1FEA;
+  border-radius: 10px;
+  color: #F2F4FE;
+  border: none;
+  width: 158px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feedback-roadmap-header {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  width: 1110px;
+  height: 113px;
+  left: 130px;
+  top: 78px;
+  background-color: #373F68;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px;
+}
+
+.feedback-roadmap-header .header-content h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  letter-spacing: -0.333333px;
+  color: #FFFFFF;
+}

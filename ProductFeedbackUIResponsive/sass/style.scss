@@ -2,3 +2,29 @@
 @import 'reset';
 @import 'variables';
 @import 'typography';
+@import 'buttons';
+.feedback-roadmap-header {
+    box-sizing: border-box;
+    position: absolute;
+    width: 1110px;
+    height: 113px;
+    left: 130px;
+    top: 78px;
+    background-color: $main-color;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    .header-content {
+        h1 {
+            // font-family: $font;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 35px;
+            letter-spacing: -0.333333px;
+            color: $white-color;
+        }
+    }
+}

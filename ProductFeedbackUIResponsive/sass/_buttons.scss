@@ -1,0 +1,14 @@
+@import 'colors';
+@import 'typography';
+.btn1 {
+    background-color: $secondary-color;
+    border-radius: 10px;
+    color: $gray-color;
+    border: none;
+    width: 158px;
+    height: 44px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
