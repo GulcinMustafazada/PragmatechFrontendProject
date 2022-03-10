@@ -86,8 +86,7 @@ body {
 
 .feedback-container {
   width: 1110px;
-  border: 2px solid black;
-  height: 1000px;
+  height: auto;
   position: absolute;
   top: calc(50% - 26px/2 - 13.5px);
   left: 130px;
@@ -131,18 +130,267 @@ body {
   border-top: 5px solid #F49F85;
   height: 272px;
   background-color: #FFFFFF;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.feedback-container .container-elements .container-plan-item h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-elements .container-plan-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-elements .container-plan-item .feature {
+  background: #F2F4FE;
+  border-radius: 10px;
+  width: 77px;
+  height: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-elements .container-plan-item .feature span {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+}
+
+.feedback-container .container-elements .container-plan-item .interactive-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-container .container-elements .container-plan-item .interactive-elements span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #373F68;
+}
+
+.feedback-container .container-elements .container-plan-item .interactive-elements .interactive-count {
+  background-color: #F2F4FE;
+  border-radius: 10px;
+  width: 69px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-elements .container-plan-item .interactive-elements .interactive-comment i {
+  color: #CDD2EE;
 }
 
 .feedback-container .container-elements .container-progress-item {
   border-top: 5px solid #AD1FEA;
   height: 272px;
   background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback-container .container-elements .container-progress-item h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-elements .container-progress-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-elements .container-progress-item .feature {
+  background: #F2F4FE;
+  border-radius: 10px;
+  width: 77px;
+  height: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-elements .container-progress-item .feature span {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+}
+
+.feedback-container .container-elements .container-progress-item .interactive-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-container .container-elements .container-progress-item .interactive-elements span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #373F68;
+}
+
+.feedback-container .container-elements .container-progress-item .interactive-elements .interactive-count {
+  background-color: #F2F4FE;
+  border-radius: 10px;
+  width: 69px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-elements .container-progress-item .interactive-elements .interactive-comment i {
+  color: #CDD2EE;
 }
 
 .feedback-container .container-elements .container-live-item {
   border-top: 5px solid #62BCFA;
   height: 272px;
   background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback-container .container-elements .container-live-item h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-elements .container-live-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-elements .container-live-item .enhancement {
+  background: #F2F4FE;
+  border-radius: 10px;
+  width: 77px;
+  height: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-elements .container-live-item .enhancement span {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+}
+
+.feedback-container .container-elements .container-live-item .interactive-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-container .container-elements .container-live-item .interactive-elements span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #373F68;
+}
+
+.feedback-container .container-elements .container-live-item .interactive-elements .interactive-count {
+  background-color: #F2F4FE;
+  border-radius: 10px;
+  width: 69px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-elements .container-live-item .interactive-elements .interactive-comment i {
+  color: #CDD2EE;
 }
 
 .feedback-container .container-second-elements {
@@ -158,10 +406,271 @@ body {
   border-top: 5px solid #F49F85;
   height: 272px;
   background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback-container .container-second-elements .container-plan-item h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-second-elements .container-plan-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-second-elements .container-plan-item .feature {
+  background: #F2F4FE;
+  border-radius: 10px;
+  width: 77px;
+  height: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-second-elements .container-plan-item .feature span {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+}
+
+.feedback-container .container-second-elements .container-plan-item .interactive-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-container .container-second-elements .container-plan-item .interactive-elements span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #373F68;
+}
+
+.feedback-container .container-second-elements .container-plan-item .interactive-elements .interactive-count {
+  background-color: #F2F4FE;
+  border-radius: 10px;
+  width: 69px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-second-elements .container-plan-item .interactive-elements .interactive-comment i {
+  color: #CDD2EE;
 }
 
 .feedback-container .container-second-elements .container-progress-item {
   border-top: 5px solid #AD1FEA;
   height: 272px;
   background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback-container .container-second-elements .container-progress-item h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-second-elements .container-progress-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-second-elements .container-progress-item .feature {
+  background: #F2F4FE;
+  border-radius: 10px;
+  width: 77px;
+  height: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-second-elements .container-progress-item .feature span {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+}
+
+.feedback-container .container-second-elements .container-progress-item .interactive-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-container .container-second-elements .container-progress-item .interactive-elements span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #373F68;
+}
+
+.feedback-container .container-second-elements .container-progress-item .interactive-elements .interactive-count {
+  background-color: #F2F4FE;
+  border-radius: 10px;
+  width: 69px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-second-elements .container-progress-item .interactive-elements .interactive-comment i {
+  color: #CDD2EE;
+}
+
+.feedback-container .container-third-elements {
+  margin-top: 20px;
+}
+
+.feedback-container .container-third-elements .container-progress-item {
+  border-top: 5px solid #AD1FEA;
+  height: 272px;
+  background-color: #FFFFFF;
+  width: 356px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 25px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.feedback-container .container-third-elements .container-progress-item h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #373F68;
+}
+
+.feedback-container .container-third-elements .container-progress-item p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #647196;
+}
+
+.feedback-container .container-third-elements .container-progress-item .bug {
+  background: #F2F4FE;
+  border-radius: 10px;
+  width: 77px;
+  height: 30px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-third-elements .container-progress-item .bug span {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+}
+
+.feedback-container .container-third-elements .container-progress-item .interactive-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedback-container .container-third-elements .container-progress-item .interactive-elements span {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #373F68;
+}
+
+.feedback-container .container-third-elements .container-progress-item .interactive-elements .interactive-count {
+  background-color: #F2F4FE;
+  border-radius: 10px;
+  width: 69px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feedback-container .container-third-elements .container-progress-item .interactive-elements .interactive-comment i {
+  color: #CDD2EE;
 }
