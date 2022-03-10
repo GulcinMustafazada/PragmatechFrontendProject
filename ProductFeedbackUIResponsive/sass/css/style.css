@@ -87,7 +87,7 @@ body {
 .feedback-container {
   width: 1110px;
   border: 2px solid black;
-  height: 500px;
+  height: 1000px;
   position: absolute;
   top: calc(50% - 26px/2 - 13.5px);
   left: 130px;
@@ -98,6 +98,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .feedback-container .container-header h2 {
@@ -140,6 +141,27 @@ body {
 
 .feedback-container .container-elements .container-live-item {
   border-top: 5px solid #62BCFA;
+  height: 272px;
+  background-color: #FFFFFF;
+}
+
+.feedback-container .container-second-elements {
+  margin-top: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 22px;
+}
+
+.feedback-container .container-second-elements .container-plan-item {
+  border-top: 5px solid #F49F85;
+  height: 272px;
+  background-color: #FFFFFF;
+}
+
+.feedback-container .container-second-elements .container-progress-item {
+  border-top: 5px solid #AD1FEA;
   height: 272px;
   background-color: #FFFFFF;
 }

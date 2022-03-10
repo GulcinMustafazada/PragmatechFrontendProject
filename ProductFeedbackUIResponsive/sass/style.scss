@@ -56,13 +56,14 @@
     .feedback-container {
         width: 1110px;
         border: 2px solid black;
-        height: 500px;
+        height: 1000px;
         position: absolute;
         top: calc(50% - 26px/2 - 13.5px);
         left: 130px;
         .container-header {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -96,6 +97,22 @@
             }
             .container-live-item {
                 border-top: 5px solid $blue-color;
+                height: 272px;
+                background-color: $white-color;
+            }
+        }
+        .container-second-elements {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 22px;
+            .container-plan-item {
+                border-top: 5px solid $orange-color;
+                height: 272px;
+                background-color: $white-color;
+            }
+            .container-progress-item {
+                border-top: 5px solid $secondary-color;
                 height: 272px;
                 background-color: $white-color;
             }
