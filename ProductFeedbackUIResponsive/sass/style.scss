@@ -17,6 +17,22 @@
     align-items: center;
     padding: 0 40px;
     .header-content {
+        .header-btn {
+            i {
+                color: $dark-gray-color;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+            a {
+                text-decoration: none;
+                // font-family: 'Jost';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: $white-color;
+            }
+        }
         h1 {
             // font-family: $font;
             font-style: normal;
