@@ -52,9 +52,13 @@
        Dəyişən yaddaşda yer tutur.
 
 5.   * Ümumiyyətlə sizə görə bir məlumat növünü başqa məlumat növünə çevirmək nəyə lazımdır?
-
-       Type conversion-obyektin bir məlumat növündən digərinə çevrilməsi üçün istifadə olunur. Bunu etmək dəyişənlərin funksiya tərəfindən düzgün işlənmsəini təmin etmək üçün istifadə olunur. 
+            
+       Type conversion-obyektin bir məlumat növündən digərinə çevrilməsi üçün istifadə olunur. Bunu etmək dəyişənlərin funksiya tərəfindən düzgün işlənmsəini təmin etmək üçün istifadə olunur.
+       Bu, ümumiyyətlə ifadədə birdən çox məlumat növü olduqda baş verir. Belə bir vəziyyətdə məlumat itkisinin qarşısını almaq üçün növə çevrilmə  baş verir.  
      * Type Conversion necə formada həyata keçirilir?
+       
+       Dəyişənlərin bütün məlumat növləri ən böyük məlumat növü olan dəyişənin məlumat növünə yüksəldilir.
+       
      * Type Conversion metodlarının siyahısını çıxarın
     
        ToString, ToNumber, ToBoolean -bunlar javascriptdə işlənilən metodlardır.
