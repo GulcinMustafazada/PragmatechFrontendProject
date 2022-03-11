@@ -6,6 +6,7 @@
 @import 'buttons';
 body {
     background-color: $gray-color;
+    font-family: $font;
 }
 
 .feedback-roadmap-header {
@@ -30,7 +31,7 @@ body {
             }
             a {
                 text-decoration: none;
-                // font-family: 'Jost';
+                font-family: 'Jost';
                 font-style: normal;
                 font-weight: 700;
                 font-size: 14px;
@@ -91,6 +92,21 @@ body {
             padding: 25px;
             box-sizing: border-box;
             border-radius: 5px;
+            .item-heading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+                .oval {
+                    background: $orange-color;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -156,6 +172,21 @@ body {
             border-radius: 5px;
             padding: 25px;
             box-sizing: border-box;
+            .item-heading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+                .oval {
+                    background: $main-color;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -221,6 +252,21 @@ body {
             border-radius: 5px;
             padding: 25px;
             box-sizing: border-box;
+            .item-heading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+                .oval {
+                    background: $blue-color;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -292,6 +338,21 @@ body {
             border-radius: 5px;
             padding: 25px;
             box-sizing: border-box;
+            .item-heading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+                .oval {
+                    background: $orange-color;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -357,6 +418,21 @@ body {
             border-radius: 5px;
             padding: 25px;
             box-sizing: border-box;
+            .item-heading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+                .oval {
+                    background: $main-color;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -427,6 +503,21 @@ body {
             border-radius: 5px;
             padding: 25px;
             box-sizing: border-box;
+            .item-heading {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 23px;
+                color: $light-main-color;
+                .oval {
+                    background: $main-color;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            }
             h2 {
                 font-style: normal;
                 font-weight: 700;
