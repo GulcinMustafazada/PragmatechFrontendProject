@@ -605,3 +605,13 @@ body {
         }
     }
 }
+
+@media(max-width:768px) {
+    .feedback-roadmap-header {
+        width: 689px;
+        position: absolute;
+        height: 113px;
+        left: 39px;
+        top: 56px;
+    }
+}
