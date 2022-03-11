@@ -131,16 +131,28 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                // &:hover {
+                //     background: $dark-blue-color;
+                //     color: $white-color;
+                //     cursor: pointer;
+                // }
                 span {
                     font-weight: 600;
                     font-size: 13px;
                     line-height: 19px;
                     color: $dark-blue-color;
+                    // &:hover {
+                    //     color: $white-color;
+                    //     cursor: pointer;
+                    // }
                 }
             }
             .interactive-elements {
                 display: flex;
                 justify-content: space-between;
+                i {
+                    color: $light-main-color;
+                }
                 span {
                     margin-left: 10px;
                     font-style: normal;
@@ -179,7 +191,7 @@ body {
                 line-height: 23px;
                 color: $light-main-color;
                 .oval {
-                    background: $main-color;
+                    background: $secondary-color;
                     border-radius: 50%;
                     width: 8px;
                     height: 8px;
@@ -221,6 +233,9 @@ body {
             .interactive-elements {
                 display: flex;
                 justify-content: space-between;
+                i {
+                    color: $light-main-color;
+                }
                 span {
                     margin-left: 10px;
                     font-style: normal;
@@ -301,6 +316,9 @@ body {
             .interactive-elements {
                 display: flex;
                 justify-content: space-between;
+                i {
+                    color: $light-main-color;
+                }
                 span {
                     margin-left: 10px;
                     font-style: normal;
@@ -387,6 +405,9 @@ body {
             .interactive-elements {
                 display: flex;
                 justify-content: space-between;
+                i {
+                    color: $light-main-color;
+                }
                 span {
                     margin-left: 10px;
                     font-style: normal;
@@ -425,7 +446,7 @@ body {
                 line-height: 23px;
                 color: $light-main-color;
                 .oval {
-                    background: $main-color;
+                    background: $secondary-color;
                     border-radius: 50%;
                     width: 8px;
                     height: 8px;
@@ -467,6 +488,9 @@ body {
             .interactive-elements {
                 display: flex;
                 justify-content: space-between;
+                i {
+                    color: $light-main-color;
+                }
                 span {
                     margin-left: 10px;
                     font-style: normal;
@@ -510,7 +534,7 @@ body {
                 line-height: 23px;
                 color: $light-main-color;
                 .oval {
-                    background: $main-color;
+                    background: $secondary-color;
                     border-radius: 50%;
                     width: 8px;
                     height: 8px;
@@ -552,6 +576,9 @@ body {
             .interactive-elements {
                 display: flex;
                 justify-content: space-between;
+                i {
+                    color: $light-main-color;
+                }
                 span {
                     margin-left: 10px;
                     font-style: normal;
