@@ -1,9 +1,9 @@
-@import 'colors';
-@import 'common';
-@import 'reset';
 @import 'variables';
-@import 'typography';
 @import 'buttons';
+@import 'reset';
+@import 'common';
+@import 'typography';
+@import 'colors';
 body {
     background-color: $gray-color;
     font-family: $font;
@@ -12,22 +12,22 @@ body {
 .feedback-roadmap-header {
     box-sizing: border-box;
     position: relative;
-    width: 1110px;
+    width: $roadmap-width;
     height: 113px;
-    left: 130px;
-    top: 78px;
+    left: $position-left;
+    top: $position-top;
     background-color: $main-color;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 $space-4x;
     .header-content {
         .header-btn {
             i {
                 color: $dark-gray-color;
                 font-size: 12px;
-                margin-right: 10px;
+                margin-right: $space-x;
             }
             a {
                 text-decoration: none;
@@ -55,11 +55,11 @@ body {
 }
 
 .feedback-container {
-    width: 1110px;
+    width: $roadmap-width;
     height: auto;
     position: absolute;
     top: calc(50% - 26px/2 - 13.5px);
-    left: 130px;
+    left: $position-left;
     .container-header {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -606,7 +606,17 @@ body {
     }
 }
 
-@media(max-width:768px) {
+@media screen and (max-width:768px) {
+    .feedback-roadmap-header {
+        width: 689px;
+        position: absolute;
+        height: 113px;
+        left: 39px;
+        top: 56px;
+    }
+}
+
+@media screen and (max-width:576px) {
     .feedback-roadmap-header {
         width: 689px;
         position: absolute;
