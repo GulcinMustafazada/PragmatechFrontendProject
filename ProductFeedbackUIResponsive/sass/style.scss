@@ -1,112 +1,86 @@
-@import 'variables';
-@import 'buttons';
 @import 'reset';
-@import 'common';
 @import 'typography';
+@import 'breakpoints';
+@import 'variables';
 @import 'colors';
+@import 'buttons';
+@import 'common';
 body {
     background-color: $gray-color;
     font-family: $font;
 }
 
-.feedback-roadmap-header {
-    box-sizing: border-box;
-    position: relative;
-    width: $roadmap-width;
-    height: 113px;
-    left: $position-left;
-    top: $position-top;
-    background-color: $main-color;
-    border-radius: 10px;
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 $space-4x;
-    .header-content {
-        .header-btn {
-            i {
-                color: $dark-gray-color;
-                font-size: 12px;
-                margin-right: $space-x;
+    flex-direction: column;
+    gap: 30px;
+    .feedback-roadmap-header {
+        box-sizing: border-box;
+        // position: relative;
+        width: 100%;
+        height: 113px;
+        // left: $position-left;
+        // top: $position-top;
+        background-color: $main-color;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $space-4x;
+        @include responsive(tablet) {
+            width: 600px;
+            height: 80px;
+            background-color: aqua;
+        }
+        @include responsive(mobile) {
+            width: 480px;
+            height: 40px;
+            background-color: red;
+        }
+        .header-content {
+            .header-btn {
+                i {
+                    color: $dark-gray-color;
+                    font-size: 12px;
+                    margin-right: $space-x;
+                }
+                a {
+                    text-decoration: none;
+                    font-family: 'Jost';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: $white-color;
+                    &:hover {
+                        text-decoration-line: underline;
+                    }
+                }
             }
-            a {
-                text-decoration: none;
-                font-family: 'Jost';
+            h1 {
+                // font-family: $font;
                 font-style: normal;
                 font-weight: 700;
-                font-size: 14px;
-                line-height: 20px;
+                font-size: 24px;
+                line-height: 35px;
+                letter-spacing: -0.333333px;
                 color: $white-color;
-                &:hover {
-                    text-decoration-line: underline;
-                }
             }
         }
-        h1 {
-            // font-family: $font;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 35px;
-            letter-spacing: -0.333333px;
-            color: $white-color;
-        }
     }
-}
-
-.feedback-container {
-    width: $roadmap-width;
-    height: auto;
-    position: absolute;
-    top: calc(50% - 26px/2 - 13.5px);
-    left: $position-left;
-    .container-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-        h2 {
-            font-style: normal;
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 26px;
-            letter-spacing: -0.25px;
-            color: $main-color;
-        }
-        p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 23px;
-            color: $light-main-color;
-        }
-    }
-    .container-elements {
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 22px;
-        .container-plan-item {
-            border-top: 5px solid $orange-color;
-            height: 272px;
-            background-color: $white-color;
-            padding: 25px;
-            box-sizing: border-box;
-            border-radius: 5px;
-            .item-heading {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-                .oval {
-                    background: $orange-color;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
+    .feedback-container {
+        width: $roadmap-width;
+        height: auto;
+        // position: absolute;
+        top: calc(50% - 26px/2 - 13.5px);
+        // left: $position-left;
+        .container-header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
             h2 {
                 font-style: normal;
                 font-weight: 700;
@@ -122,506 +96,530 @@ body {
                 line-height: 23px;
                 color: $light-main-color;
             }
-            .feature {
-                background: $gray-color;
-                border-radius: 10px;
-                width: 77px;
-                height: 30px;
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                // &:hover {
-                //     background: $dark-blue-color;
-                //     color: $white-color;
-                //     cursor: pointer;
-                // }
-                span {
-                    font-weight: 600;
-                    font-size: 13px;
-                    line-height: 19px;
-                    color: $dark-blue-color;
+        }
+        .container-elements {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 22px;
+            .container-plan-item {
+                border-top: 5px solid $orange-color;
+                height: 272px;
+                background-color: $white-color;
+                padding: 25px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                .item-heading {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                    .oval {
+                        background: $orange-color;
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.25px;
+                    color: $main-color;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                }
+                .feature {
+                    background: $gray-color;
+                    border-radius: 10px;
+                    width: 77px;
+                    height: 30px;
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     // &:hover {
+                    //     background: $dark-blue-color;
                     //     color: $white-color;
                     //     cursor: pointer;
                     // }
+                    span {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $dark-blue-color;
+                        // &:hover {
+                        //     color: $white-color;
+                        //     cursor: pointer;
+                        // }
+                    }
+                }
+                .interactive-elements {
+                    display: flex;
+                    justify-content: space-between;
+                    i {
+                        color: $light-main-color;
+                    }
+                    span {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $main-color;
+                    }
+                    .interactive-count {
+                        background-color: $gray-color;
+                        border-radius: 10px;
+                        width: 69px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .interactive-comment {
+                        i {
+                            color: $dark-gray-color;
+                        }
+                    }
                 }
             }
-            .interactive-elements {
-                display: flex;
-                justify-content: space-between;
-                i {
+            .container-progress-item {
+                border-top: 5px solid $secondary-color;
+                height: 272px;
+                background-color: $white-color;
+                border-radius: 5px;
+                padding: 25px;
+                box-sizing: border-box;
+                .item-heading {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
                     color: $light-main-color;
+                    .oval {
+                        background: $secondary-color;
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
                 }
-                span {
-                    margin-left: 10px;
+                h2 {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.25px;
                     color: $main-color;
                 }
-                .interactive-count {
-                    background-color: $gray-color;
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                }
+                .feature {
+                    background: $gray-color;
                     border-radius: 10px;
-                    width: 69px;
-                    height: 40px;
+                    width: 77px;
+                    height: 30px;
+                    margin-bottom: 15px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    span {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $dark-blue-color;
+                    }
                 }
-                .interactive-comment {
+                .interactive-elements {
+                    display: flex;
+                    justify-content: space-between;
                     i {
-                        color: $dark-gray-color;
+                        color: $light-main-color;
+                    }
+                    span {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $main-color;
+                    }
+                    .interactive-count {
+                        background-color: $gray-color;
+                        border-radius: 10px;
+                        width: 69px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .interactive-comment {
+                        i {
+                            color: $dark-gray-color;
+                        }
+                    }
+                }
+            }
+            .container-live-item {
+                border-top: 5px solid $blue-color;
+                height: 272px;
+                background-color: $white-color;
+                border-radius: 5px;
+                padding: 25px;
+                box-sizing: border-box;
+                .item-heading {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                    .oval {
+                        background: $blue-color;
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.25px;
+                    color: $main-color;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                }
+                .enhancement {
+                    background: $gray-color;
+                    border-radius: 10px;
+                    width: 77px;
+                    height: 30px;
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $dark-blue-color;
+                    }
+                }
+                .interactive-elements {
+                    display: flex;
+                    justify-content: space-between;
+                    i {
+                        color: $light-main-color;
+                    }
+                    span {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $main-color;
+                    }
+                    .interactive-count {
+                        background-color: $gray-color;
+                        border-radius: 10px;
+                        width: 69px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .interactive-comment {
+                        i {
+                            color: $dark-gray-color;
+                        }
                     }
                 }
             }
         }
-        .container-progress-item {
-            border-top: 5px solid $secondary-color;
-            height: 272px;
-            background-color: $white-color;
-            border-radius: 5px;
-            padding: 25px;
-            box-sizing: border-box;
-            .item-heading {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-                .oval {
-                    background: $secondary-color;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
-            h2 {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 26px;
-                letter-spacing: -0.25px;
-                color: $main-color;
-            }
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-            }
-            .feature {
-                background: $gray-color;
-                border-radius: 10px;
-                width: 77px;
-                height: 30px;
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                span {
-                    font-weight: 600;
-                    font-size: 13px;
-                    line-height: 19px;
-                    color: $dark-blue-color;
-                }
-            }
-            .interactive-elements {
-                display: flex;
-                justify-content: space-between;
-                i {
+        .container-second-elements {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 22px;
+            .container-plan-item {
+                border-top: 5px solid $orange-color;
+                height: 272px;
+                background-color: $white-color;
+                border-radius: 5px;
+                padding: 25px;
+                box-sizing: border-box;
+                .item-heading {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
                     color: $light-main-color;
+                    .oval {
+                        background: $orange-color;
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
                 }
-                span {
-                    margin-left: 10px;
+                h2 {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.25px;
                     color: $main-color;
                 }
-                .interactive-count {
-                    background-color: $gray-color;
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                }
+                .feature {
+                    background: $gray-color;
                     border-radius: 10px;
-                    width: 69px;
-                    height: 40px;
+                    width: 77px;
+                    height: 30px;
+                    margin-bottom: 15px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    span {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $dark-blue-color;
+                    }
                 }
-                .interactive-comment {
+                .interactive-elements {
+                    display: flex;
+                    justify-content: space-between;
                     i {
-                        color: $dark-gray-color;
+                        color: $light-main-color;
+                    }
+                    span {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $main-color;
+                    }
+                    .interactive-count {
+                        background-color: $gray-color;
+                        border-radius: 10px;
+                        width: 69px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .interactive-comment {
+                        i {
+                            color: $dark-gray-color;
+                        }
+                    }
+                }
+            }
+            .container-progress-item {
+                border-top: 5px solid $secondary-color;
+                height: 272px;
+                background-color: $white-color;
+                border-radius: 5px;
+                padding: 25px;
+                box-sizing: border-box;
+                .item-heading {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                    .oval {
+                        background: $secondary-color;
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
+                }
+                h2 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.25px;
+                    color: $main-color;
+                }
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                }
+                .feature {
+                    background: $gray-color;
+                    border-radius: 10px;
+                    width: 77px;
+                    height: 30px;
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $dark-blue-color;
+                    }
+                }
+                .interactive-elements {
+                    display: flex;
+                    justify-content: space-between;
+                    i {
+                        color: $light-main-color;
+                    }
+                    span {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $main-color;
+                    }
+                    .interactive-count {
+                        background-color: $gray-color;
+                        border-radius: 10px;
+                        width: 69px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .interactive-comment {
+                        i {
+                            color: $dark-gray-color;
+                        }
                     }
                 }
             }
         }
-        .container-live-item {
-            border-top: 5px solid $blue-color;
-            height: 272px;
-            background-color: $white-color;
-            border-radius: 5px;
-            padding: 25px;
-            box-sizing: border-box;
-            .item-heading {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-                .oval {
-                    background: $blue-color;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
-            h2 {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 26px;
-                letter-spacing: -0.25px;
-                color: $main-color;
-            }
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-            }
-            .enhancement {
-                background: $gray-color;
-                border-radius: 10px;
-                width: 77px;
-                height: 30px;
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                span {
-                    font-weight: 600;
-                    font-size: 13px;
-                    line-height: 19px;
-                    color: $dark-blue-color;
-                }
-            }
-            .interactive-elements {
-                display: flex;
-                justify-content: space-between;
-                i {
+        .container-third-elements {
+            margin-top: 20px;
+            .container-progress-item {
+                border-top: 5px solid $secondary-color;
+                height: 272px;
+                background-color: $white-color;
+                width: 356px;
+                margin: 0 auto;
+                border-radius: 5px;
+                padding: 25px;
+                box-sizing: border-box;
+                .item-heading {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
                     color: $light-main-color;
+                    .oval {
+                        background: $secondary-color;
+                        border-radius: 50%;
+                        width: 8px;
+                        height: 8px;
+                        display: inline-block;
+                        margin-right: 10px;
+                    }
                 }
-                span {
-                    margin-left: 10px;
+                h2 {
                     font-style: normal;
                     font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: -0.25px;
                     color: $main-color;
                 }
-                .interactive-count {
-                    background-color: $gray-color;
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 23px;
+                    color: $light-main-color;
+                }
+                .bug {
+                    background: $gray-color;
                     border-radius: 10px;
-                    width: 69px;
-                    height: 40px;
+                    width: 77px;
+                    height: 30px;
+                    margin-bottom: 15px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    span {
+                        font-weight: 600;
+                        font-size: 13px;
+                        line-height: 19px;
+                        color: $dark-blue-color;
+                    }
                 }
-                .interactive-comment {
+                .interactive-elements {
+                    display: flex;
+                    justify-content: space-between;
                     i {
-                        color: $dark-gray-color;
+                        color: $light-main-color;
+                    }
+                    span {
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $main-color;
+                    }
+                    .interactive-count {
+                        background-color: $gray-color;
+                        border-radius: 10px;
+                        width: 69px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .interactive-comment {
+                        i {
+                            color: $dark-gray-color;
+                        }
                     }
                 }
             }
         }
-    }
-    .container-second-elements {
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 22px;
-        .container-plan-item {
-            border-top: 5px solid $orange-color;
-            height: 272px;
-            background-color: $white-color;
-            border-radius: 5px;
-            padding: 25px;
-            box-sizing: border-box;
-            .item-heading {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-                .oval {
-                    background: $orange-color;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
-            h2 {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 26px;
-                letter-spacing: -0.25px;
-                color: $main-color;
-            }
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-            }
-            .feature {
-                background: $gray-color;
-                border-radius: 10px;
-                width: 77px;
-                height: 30px;
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                span {
-                    font-weight: 600;
-                    font-size: 13px;
-                    line-height: 19px;
-                    color: $dark-blue-color;
-                }
-            }
-            .interactive-elements {
-                display: flex;
-                justify-content: space-between;
-                i {
-                    color: $light-main-color;
-                }
-                span {
-                    margin-left: 10px;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $main-color;
-                }
-                .interactive-count {
-                    background-color: $gray-color;
-                    border-radius: 10px;
-                    width: 69px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .interactive-comment {
-                    i {
-                        color: $dark-gray-color;
-                    }
-                }
-            }
-        }
-        .container-progress-item {
-            border-top: 5px solid $secondary-color;
-            height: 272px;
-            background-color: $white-color;
-            border-radius: 5px;
-            padding: 25px;
-            box-sizing: border-box;
-            .item-heading {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-                .oval {
-                    background: $secondary-color;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
-            h2 {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 26px;
-                letter-spacing: -0.25px;
-                color: $main-color;
-            }
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-            }
-            .feature {
-                background: $gray-color;
-                border-radius: 10px;
-                width: 77px;
-                height: 30px;
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                span {
-                    font-weight: 600;
-                    font-size: 13px;
-                    line-height: 19px;
-                    color: $dark-blue-color;
-                }
-            }
-            .interactive-elements {
-                display: flex;
-                justify-content: space-between;
-                i {
-                    color: $light-main-color;
-                }
-                span {
-                    margin-left: 10px;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $main-color;
-                }
-                .interactive-count {
-                    background-color: $gray-color;
-                    border-radius: 10px;
-                    width: 69px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .interactive-comment {
-                    i {
-                        color: $dark-gray-color;
-                    }
-                }
-            }
-        }
-    }
-    .container-third-elements {
-        margin-top: 20px;
-        .container-progress-item {
-            border-top: 5px solid $secondary-color;
-            height: 272px;
-            background-color: $white-color;
-            width: 356px;
-            margin: 0 auto;
-            border-radius: 5px;
-            padding: 25px;
-            box-sizing: border-box;
-            .item-heading {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-                .oval {
-                    background: $secondary-color;
-                    border-radius: 50%;
-                    width: 8px;
-                    height: 8px;
-                    display: inline-block;
-                    margin-right: 10px;
-                }
-            }
-            h2 {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 26px;
-                letter-spacing: -0.25px;
-                color: $main-color;
-            }
-            p {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 23px;
-                color: $light-main-color;
-            }
-            .bug {
-                background: $gray-color;
-                border-radius: 10px;
-                width: 77px;
-                height: 30px;
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                span {
-                    font-weight: 600;
-                    font-size: 13px;
-                    line-height: 19px;
-                    color: $dark-blue-color;
-                }
-            }
-            .interactive-elements {
-                display: flex;
-                justify-content: space-between;
-                i {
-                    color: $light-main-color;
-                }
-                span {
-                    margin-left: 10px;
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $main-color;
-                }
-                .interactive-count {
-                    background-color: $gray-color;
-                    border-radius: 10px;
-                    width: 69px;
-                    height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .interactive-comment {
-                    i {
-                        color: $dark-gray-color;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:768px) {
-    .feedback-roadmap-header {
-        width: 689px;
-        position: absolute;
-        height: 113px;
-        left: 39px;
-        top: 56px;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .feedback-roadmap-header {
-        width: 689px;
-        position: absolute;
-        height: 113px;
-        left: 39px;
-        top: 56px;
     }
 }

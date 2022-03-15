@@ -1,3 +1,9 @@
+body,
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
 .btn {
   background-color: #AD1FEA;
   border-radius: 10px;
@@ -11,25 +17,30 @@
   line-height: 20px;
 }
 
-body,
-h1 {
-  padding: 0;
-  margin: 0;
-}
-
 body {
   background-color: #F2F4FE;
   font-family: "Jost";
 }
 
-.feedback-roadmap-header {
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.container .feedback-roadmap-header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
-  width: 1110px;
+  width: 100%;
   height: 113px;
-  left: 130px;
-  top: 78px;
   background-color: #373F68;
   border-radius: 10px;
   display: -webkit-box;
@@ -44,13 +55,29 @@ body {
   padding: 0 40px;
 }
 
-.feedback-roadmap-header .header-content .header-btn i {
+@media only screen and (max-device-width: 760px) {
+  .container .feedback-roadmap-header {
+    width: 600px;
+    height: 80px;
+    background-color: aqua;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+  .container .feedback-roadmap-header {
+    width: 480px;
+    height: 40px;
+    background-color: red;
+  }
+}
+
+.container .feedback-roadmap-header .header-content .header-btn i {
   color: #CDD2EE;
   font-size: 12px;
   margin-right: 10px;
 }
 
-.feedback-roadmap-header .header-content .header-btn a {
+.container .feedback-roadmap-header .header-content .header-btn a {
   text-decoration: none;
   font-family: 'Jost';
   font-style: normal;
@@ -60,12 +87,12 @@ body {
   color: #FFFFFF;
 }
 
-.feedback-roadmap-header .header-content .header-btn a:hover {
+.container .feedback-roadmap-header .header-content .header-btn a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
-.feedback-roadmap-header .header-content h1 {
+.container .feedback-roadmap-header .header-content h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -74,15 +101,13 @@ body {
   color: #FFFFFF;
 }
 
-.feedback-container {
+.container .feedback-container {
   width: 1110px;
   height: auto;
-  position: absolute;
   top: calc(50% - 26px/2 - 13.5px);
-  left: 130px;
 }
 
-.feedback-container .container-header {
+.container .feedback-container .container-header {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -90,7 +115,7 @@ body {
   gap: 20px;
 }
 
-.feedback-container .container-header h2 {
+.container .feedback-container .container-header h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -99,7 +124,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-header p {
+.container .feedback-container .container-header p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -107,7 +132,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements {
+.container .feedback-container .container-elements {
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
@@ -116,7 +141,7 @@ body {
   gap: 22px;
 }
 
-.feedback-container .container-elements .container-plan-item {
+.container .feedback-container .container-elements .container-plan-item {
   border-top: 5px solid #F49F85;
   height: 272px;
   background-color: #FFFFFF;
@@ -126,7 +151,7 @@ body {
   border-radius: 5px;
 }
 
-.feedback-container .container-elements .container-plan-item .item-heading {
+.container .feedback-container .container-elements .container-plan-item .item-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -134,7 +159,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-plan-item .item-heading .oval {
+.container .feedback-container .container-elements .container-plan-item .item-heading .oval {
   background: #F49F85;
   border-radius: 50%;
   width: 8px;
@@ -143,7 +168,7 @@ body {
   margin-right: 10px;
 }
 
-.feedback-container .container-elements .container-plan-item h2 {
+.container .feedback-container .container-elements .container-plan-item h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -152,7 +177,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-elements .container-plan-item p {
+.container .feedback-container .container-elements .container-plan-item p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -160,7 +185,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-plan-item .feature {
+.container .feedback-container .container-elements .container-plan-item .feature {
   background: #F2F4FE;
   border-radius: 10px;
   width: 77px;
@@ -177,14 +202,14 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-elements .container-plan-item .feature span {
+.container .feedback-container .container-elements .container-plan-item .feature span {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   color: #4661E6;
 }
 
-.feedback-container .container-elements .container-plan-item .interactive-elements {
+.container .feedback-container .container-elements .container-plan-item .interactive-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,11 +218,11 @@ body {
           justify-content: space-between;
 }
 
-.feedback-container .container-elements .container-plan-item .interactive-elements i {
+.container .feedback-container .container-elements .container-plan-item .interactive-elements i {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-plan-item .interactive-elements span {
+.container .feedback-container .container-elements .container-plan-item .interactive-elements span {
   margin-left: 10px;
   font-style: normal;
   font-weight: 700;
@@ -206,7 +231,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-elements .container-plan-item .interactive-elements .interactive-count {
+.container .feedback-container .container-elements .container-plan-item .interactive-elements .interactive-count {
   background-color: #F2F4FE;
   border-radius: 10px;
   width: 69px;
@@ -222,11 +247,11 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-elements .container-plan-item .interactive-elements .interactive-comment i {
+.container .feedback-container .container-elements .container-plan-item .interactive-elements .interactive-comment i {
   color: #CDD2EE;
 }
 
-.feedback-container .container-elements .container-progress-item {
+.container .feedback-container .container-elements .container-progress-item {
   border-top: 5px solid #AD1FEA;
   height: 272px;
   background-color: #FFFFFF;
@@ -236,7 +261,7 @@ body {
           box-sizing: border-box;
 }
 
-.feedback-container .container-elements .container-progress-item .item-heading {
+.container .feedback-container .container-elements .container-progress-item .item-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -244,7 +269,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-progress-item .item-heading .oval {
+.container .feedback-container .container-elements .container-progress-item .item-heading .oval {
   background: #AD1FEA;
   border-radius: 50%;
   width: 8px;
@@ -253,7 +278,7 @@ body {
   margin-right: 10px;
 }
 
-.feedback-container .container-elements .container-progress-item h2 {
+.container .feedback-container .container-elements .container-progress-item h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -262,7 +287,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-elements .container-progress-item p {
+.container .feedback-container .container-elements .container-progress-item p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -270,7 +295,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-progress-item .feature {
+.container .feedback-container .container-elements .container-progress-item .feature {
   background: #F2F4FE;
   border-radius: 10px;
   width: 77px;
@@ -287,14 +312,14 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-elements .container-progress-item .feature span {
+.container .feedback-container .container-elements .container-progress-item .feature span {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   color: #4661E6;
 }
 
-.feedback-container .container-elements .container-progress-item .interactive-elements {
+.container .feedback-container .container-elements .container-progress-item .interactive-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,11 +328,11 @@ body {
           justify-content: space-between;
 }
 
-.feedback-container .container-elements .container-progress-item .interactive-elements i {
+.container .feedback-container .container-elements .container-progress-item .interactive-elements i {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-progress-item .interactive-elements span {
+.container .feedback-container .container-elements .container-progress-item .interactive-elements span {
   margin-left: 10px;
   font-style: normal;
   font-weight: 700;
@@ -316,7 +341,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-elements .container-progress-item .interactive-elements .interactive-count {
+.container .feedback-container .container-elements .container-progress-item .interactive-elements .interactive-count {
   background-color: #F2F4FE;
   border-radius: 10px;
   width: 69px;
@@ -332,11 +357,11 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-elements .container-progress-item .interactive-elements .interactive-comment i {
+.container .feedback-container .container-elements .container-progress-item .interactive-elements .interactive-comment i {
   color: #CDD2EE;
 }
 
-.feedback-container .container-elements .container-live-item {
+.container .feedback-container .container-elements .container-live-item {
   border-top: 5px solid #62BCFA;
   height: 272px;
   background-color: #FFFFFF;
@@ -346,7 +371,7 @@ body {
           box-sizing: border-box;
 }
 
-.feedback-container .container-elements .container-live-item .item-heading {
+.container .feedback-container .container-elements .container-live-item .item-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -354,7 +379,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-live-item .item-heading .oval {
+.container .feedback-container .container-elements .container-live-item .item-heading .oval {
   background: #62BCFA;
   border-radius: 50%;
   width: 8px;
@@ -363,7 +388,7 @@ body {
   margin-right: 10px;
 }
 
-.feedback-container .container-elements .container-live-item h2 {
+.container .feedback-container .container-elements .container-live-item h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -372,7 +397,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-elements .container-live-item p {
+.container .feedback-container .container-elements .container-live-item p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -380,7 +405,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-live-item .enhancement {
+.container .feedback-container .container-elements .container-live-item .enhancement {
   background: #F2F4FE;
   border-radius: 10px;
   width: 77px;
@@ -397,14 +422,14 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-elements .container-live-item .enhancement span {
+.container .feedback-container .container-elements .container-live-item .enhancement span {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   color: #4661E6;
 }
 
-.feedback-container .container-elements .container-live-item .interactive-elements {
+.container .feedback-container .container-elements .container-live-item .interactive-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,11 +438,11 @@ body {
           justify-content: space-between;
 }
 
-.feedback-container .container-elements .container-live-item .interactive-elements i {
+.container .feedback-container .container-elements .container-live-item .interactive-elements i {
   color: #647196;
 }
 
-.feedback-container .container-elements .container-live-item .interactive-elements span {
+.container .feedback-container .container-elements .container-live-item .interactive-elements span {
   margin-left: 10px;
   font-style: normal;
   font-weight: 700;
@@ -426,7 +451,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-elements .container-live-item .interactive-elements .interactive-count {
+.container .feedback-container .container-elements .container-live-item .interactive-elements .interactive-count {
   background-color: #F2F4FE;
   border-radius: 10px;
   width: 69px;
@@ -442,11 +467,11 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-elements .container-live-item .interactive-elements .interactive-comment i {
+.container .feedback-container .container-elements .container-live-item .interactive-elements .interactive-comment i {
   color: #CDD2EE;
 }
 
-.feedback-container .container-second-elements {
+.container .feedback-container .container-second-elements {
   margin-top: 20px;
   display: -ms-grid;
   display: grid;
@@ -455,7 +480,7 @@ body {
   gap: 22px;
 }
 
-.feedback-container .container-second-elements .container-plan-item {
+.container .feedback-container .container-second-elements .container-plan-item {
   border-top: 5px solid #F49F85;
   height: 272px;
   background-color: #FFFFFF;
@@ -465,7 +490,7 @@ body {
           box-sizing: border-box;
 }
 
-.feedback-container .container-second-elements .container-plan-item .item-heading {
+.container .feedback-container .container-second-elements .container-plan-item .item-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -473,7 +498,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-second-elements .container-plan-item .item-heading .oval {
+.container .feedback-container .container-second-elements .container-plan-item .item-heading .oval {
   background: #F49F85;
   border-radius: 50%;
   width: 8px;
@@ -482,7 +507,7 @@ body {
   margin-right: 10px;
 }
 
-.feedback-container .container-second-elements .container-plan-item h2 {
+.container .feedback-container .container-second-elements .container-plan-item h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -491,7 +516,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-second-elements .container-plan-item p {
+.container .feedback-container .container-second-elements .container-plan-item p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -499,7 +524,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-second-elements .container-plan-item .feature {
+.container .feedback-container .container-second-elements .container-plan-item .feature {
   background: #F2F4FE;
   border-radius: 10px;
   width: 77px;
@@ -516,14 +541,14 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-second-elements .container-plan-item .feature span {
+.container .feedback-container .container-second-elements .container-plan-item .feature span {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   color: #4661E6;
 }
 
-.feedback-container .container-second-elements .container-plan-item .interactive-elements {
+.container .feedback-container .container-second-elements .container-plan-item .interactive-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -532,11 +557,11 @@ body {
           justify-content: space-between;
 }
 
-.feedback-container .container-second-elements .container-plan-item .interactive-elements i {
+.container .feedback-container .container-second-elements .container-plan-item .interactive-elements i {
   color: #647196;
 }
 
-.feedback-container .container-second-elements .container-plan-item .interactive-elements span {
+.container .feedback-container .container-second-elements .container-plan-item .interactive-elements span {
   margin-left: 10px;
   font-style: normal;
   font-weight: 700;
@@ -545,7 +570,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-second-elements .container-plan-item .interactive-elements .interactive-count {
+.container .feedback-container .container-second-elements .container-plan-item .interactive-elements .interactive-count {
   background-color: #F2F4FE;
   border-radius: 10px;
   width: 69px;
@@ -561,11 +586,11 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-second-elements .container-plan-item .interactive-elements .interactive-comment i {
+.container .feedback-container .container-second-elements .container-plan-item .interactive-elements .interactive-comment i {
   color: #CDD2EE;
 }
 
-.feedback-container .container-second-elements .container-progress-item {
+.container .feedback-container .container-second-elements .container-progress-item {
   border-top: 5px solid #AD1FEA;
   height: 272px;
   background-color: #FFFFFF;
@@ -575,7 +600,7 @@ body {
           box-sizing: border-box;
 }
 
-.feedback-container .container-second-elements .container-progress-item .item-heading {
+.container .feedback-container .container-second-elements .container-progress-item .item-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -583,7 +608,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-second-elements .container-progress-item .item-heading .oval {
+.container .feedback-container .container-second-elements .container-progress-item .item-heading .oval {
   background: #AD1FEA;
   border-radius: 50%;
   width: 8px;
@@ -592,7 +617,7 @@ body {
   margin-right: 10px;
 }
 
-.feedback-container .container-second-elements .container-progress-item h2 {
+.container .feedback-container .container-second-elements .container-progress-item h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -601,7 +626,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-second-elements .container-progress-item p {
+.container .feedback-container .container-second-elements .container-progress-item p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -609,7 +634,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-second-elements .container-progress-item .feature {
+.container .feedback-container .container-second-elements .container-progress-item .feature {
   background: #F2F4FE;
   border-radius: 10px;
   width: 77px;
@@ -626,14 +651,14 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-second-elements .container-progress-item .feature span {
+.container .feedback-container .container-second-elements .container-progress-item .feature span {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   color: #4661E6;
 }
 
-.feedback-container .container-second-elements .container-progress-item .interactive-elements {
+.container .feedback-container .container-second-elements .container-progress-item .interactive-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,11 +667,11 @@ body {
           justify-content: space-between;
 }
 
-.feedback-container .container-second-elements .container-progress-item .interactive-elements i {
+.container .feedback-container .container-second-elements .container-progress-item .interactive-elements i {
   color: #647196;
 }
 
-.feedback-container .container-second-elements .container-progress-item .interactive-elements span {
+.container .feedback-container .container-second-elements .container-progress-item .interactive-elements span {
   margin-left: 10px;
   font-style: normal;
   font-weight: 700;
@@ -655,7 +680,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-second-elements .container-progress-item .interactive-elements .interactive-count {
+.container .feedback-container .container-second-elements .container-progress-item .interactive-elements .interactive-count {
   background-color: #F2F4FE;
   border-radius: 10px;
   width: 69px;
@@ -671,15 +696,15 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-second-elements .container-progress-item .interactive-elements .interactive-comment i {
+.container .feedback-container .container-second-elements .container-progress-item .interactive-elements .interactive-comment i {
   color: #CDD2EE;
 }
 
-.feedback-container .container-third-elements {
+.container .feedback-container .container-third-elements {
   margin-top: 20px;
 }
 
-.feedback-container .container-third-elements .container-progress-item {
+.container .feedback-container .container-third-elements .container-progress-item {
   border-top: 5px solid #AD1FEA;
   height: 272px;
   background-color: #FFFFFF;
@@ -691,7 +716,7 @@ body {
           box-sizing: border-box;
 }
 
-.feedback-container .container-third-elements .container-progress-item .item-heading {
+.container .feedback-container .container-third-elements .container-progress-item .item-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -699,7 +724,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-third-elements .container-progress-item .item-heading .oval {
+.container .feedback-container .container-third-elements .container-progress-item .item-heading .oval {
   background: #AD1FEA;
   border-radius: 50%;
   width: 8px;
@@ -708,7 +733,7 @@ body {
   margin-right: 10px;
 }
 
-.feedback-container .container-third-elements .container-progress-item h2 {
+.container .feedback-container .container-third-elements .container-progress-item h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -717,7 +742,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-third-elements .container-progress-item p {
+.container .feedback-container .container-third-elements .container-progress-item p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -725,7 +750,7 @@ body {
   color: #647196;
 }
 
-.feedback-container .container-third-elements .container-progress-item .bug {
+.container .feedback-container .container-third-elements .container-progress-item .bug {
   background: #F2F4FE;
   border-radius: 10px;
   width: 77px;
@@ -742,14 +767,14 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-third-elements .container-progress-item .bug span {
+.container .feedback-container .container-third-elements .container-progress-item .bug span {
   font-weight: 600;
   font-size: 13px;
   line-height: 19px;
   color: #4661E6;
 }
 
-.feedback-container .container-third-elements .container-progress-item .interactive-elements {
+.container .feedback-container .container-third-elements .container-progress-item .interactive-elements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -758,11 +783,11 @@ body {
           justify-content: space-between;
 }
 
-.feedback-container .container-third-elements .container-progress-item .interactive-elements i {
+.container .feedback-container .container-third-elements .container-progress-item .interactive-elements i {
   color: #647196;
 }
 
-.feedback-container .container-third-elements .container-progress-item .interactive-elements span {
+.container .feedback-container .container-third-elements .container-progress-item .interactive-elements span {
   margin-left: 10px;
   font-style: normal;
   font-weight: 700;
@@ -771,7 +796,7 @@ body {
   color: #373F68;
 }
 
-.feedback-container .container-third-elements .container-progress-item .interactive-elements .interactive-count {
+.container .feedback-container .container-third-elements .container-progress-item .interactive-elements .interactive-count {
   background-color: #F2F4FE;
   border-radius: 10px;
   width: 69px;
@@ -787,26 +812,6 @@ body {
           justify-content: center;
 }
 
-.feedback-container .container-third-elements .container-progress-item .interactive-elements .interactive-comment i {
+.container .feedback-container .container-third-elements .container-progress-item .interactive-elements .interactive-comment i {
   color: #CDD2EE;
-}
-
-@media screen and (max-width: 768px) {
-  .feedback-roadmap-header {
-    width: 689px;
-    position: absolute;
-    height: 113px;
-    left: 39px;
-    top: 56px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .feedback-roadmap-header {
-    width: 689px;
-    position: absolute;
-    height: 113px;
-    left: 39px;
-    top: 56px;
-  }
 }
