@@ -33,12 +33,10 @@ body {
         @include responsive(tablet) {
             width: 600px;
             height: 80px;
-            background-color: aqua;
         }
         @include responsive(mobile) {
             width: 480px;
             height: 40px;
-            background-color: red;
         }
         .header-content {
             .header-btn {
