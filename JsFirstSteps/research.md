@@ -26,3 +26,8 @@
     - primitive və reference data tipləri deyə iki kategoriyaya ayrılma səbəbi nə ola bilər?
      
       Bunun səbəbi həmin data tiplərin işlənmə yerlərinə və funksiyalarına görədir.Primitiv data tipləri daha sadə və sabitdirlər.Reference data tipləri isə dinamikdilər. 
+
+     - bu iki tip arasında fərqli xüsusiyyətlər nədir?
+
+       Bunlar arasında bir neçə fərqli cəhət vardır. Məsələn primitive data tipləri sabitdirlər və obyekt deyillər ,eyni zamanda metodları yoxdur. Onlar yaddaşın stack hissəsində yerləşirlər.
+      Reference data tipləri isə daha dinamikdirlər. Onlar obyektdirlər və metdodları var.Və yaddaşın heap hissəsində yer tuturlar.
