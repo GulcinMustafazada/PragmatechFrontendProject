@@ -16,3 +16,7 @@
     - Javascriptdə kod yazarkən indentation hansı hallarda istifadə olunur və mən kod yazarkən indentation istifadə etməyə məcburammı?
      
       İdentation istifadə etmək məcburi deyildir.Ancaq Oxunma qabiliyyətini qorumaq və çaşqınlığı azaltmaq üçün kodumuzun düzgün identationu mütləqdir. İf/else şərtlərində identationu işlədilməsinə daha çox rast gəlinir.
+
+ 2. **Primitive and Reference data types?**
+   
+    - let x=5; kodlarının v8engine tərəfindən tərcümə edilərək maşın dilinə çevrilmə prosesini necə təsəvüür edirsiniz?
