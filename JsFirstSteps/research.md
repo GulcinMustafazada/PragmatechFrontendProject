@@ -36,3 +36,7 @@
 
         Deməli kodlarımız yazıldığı zaman v8 engine onu oxuyur və tərcümə edir.Bu zaman primitiv data tipləri dəyişənlərə əsasən gedib yaddaşın stack hissəsində yer tuturlar. Yəni onlara verilən dəyişən adlarına əsasən onlar yaddaşda yer tuturlar.
        Reference data tipləri isə özləri yaddaşın heap hissəində yer tuturlar. Ancaq onların pointerləri stackdə yerləşir.Yəni stack -dan heap-ə istinad olunur.
+
+       - data tiplərin bu formada iki kategoriyaya ayrılması sadəcə javascript dilinə xas xüsusiyyətdir yoxsa digər dillərdə də eyni yanaşma mövcuddur mu?
+
+         Xeyr bu təkcə Javascriptə xas bir şey deyil. Digər proqramlaşdırma dillərində də data tipləri iki kateqoriyaya ayrılır.
