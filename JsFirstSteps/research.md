@@ -40,3 +40,7 @@
        - data tiplərin bu formada iki kategoriyaya ayrılması sadəcə javascript dilinə xas xüsusiyyətdir yoxsa digər dillərdə də eyni yanaşma mövcuddur mu?
 
          Xeyr bu təkcə Javascriptə xas bir şey deyil. Digər proqramlaşdırma dillərində də data tipləri iki kateqoriyaya ayrılır.
+
+    - Bu mövzunu öyrənmək proqramçı olaraq sizə nə qata bilər? Yəni bu mövzunu qavramağınız sizə nə fayda verəcək?
+      
+      Bu mövzunun öyrənilməsi məlumat növlərinin hər daim işlətdiyimizə görə onların komputürin yaddaşında necə yer tutmasını müəyyən etmək üçün vacidbdir. Yəni kompüteri  və məlumat növlərinin qarşılıqlı şəkildə işləmə prinsipini müəyyən etməyə imkan verir.
