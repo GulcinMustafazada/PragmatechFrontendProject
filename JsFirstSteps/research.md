@@ -59,3 +59,8 @@
        Number tipinde NaN və undefined NaN olaraq nəticələnəcək.Null isə 0 olacaq.
       String tipinde isə bu ifadələri stringə çevirəcək.
       Boolean tipində isə null,NaN və undefined  false olacaq.
+
+4. **Expressions and operators**
+    - expression deyiləndə nə başa düşməyim lazımdır?
+
+      Expressions hər hansı kod vahidir.Javascriptdə kod yazmaq üçün istifadə olunan istifadə olunan ifadələrdir.
