@@ -79,3 +79,7 @@
      
       Funksiyalar proqramı və oxunma sürətini asanlaşdırır.Kod təkrarının qarşısını alır.
       Bir dəfə təyin edib bir neçə yerdə istifadə etmək mümükündür.
+
+    - necə formada function təyin etmək olar?
+     
+      Funksiyanı təyin  etmək  üçün function açar sözündən istifadə olunur. Onların adlandırılması isə javascriptdə dəyişənlərin adlandırılma qaydasına əsasən aparılır.
