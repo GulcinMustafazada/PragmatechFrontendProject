@@ -31,3 +31,8 @@
 
        Bunlar arasında bir neçə fərqli cəhət vardır. Məsələn primitive data tipləri sabitdirlər və obyekt deyillər ,eyni zamanda metodları yoxdur. Onlar yaddaşın stack hissəsində yerləşirlər.
       Reference data tipləri isə daha dinamikdirlər. Onlar obyektdirlər və metdodları var.Və yaddaşın heap hissəsində yer tuturlar.
+
+      - bu data tiplərin yaddaşdakı yeri ilə əlaqədar senarilərinizi yazın. Yəni kod v8 enginə-nə ötürüldüyü zaman o kodun başına nə iş gəlir?
+
+        Deməli kodlarımız yazıldığı zaman v8 engine onu oxuyur və tərcümə edir.Bu zaman primitiv data tipləri dəyişənlərə əsasən gedib yaddaşın stack hissəsində yer tuturlar. Yəni onlara verilən dəyişən adlarına əsasən onlar yaddaşda yer tuturlar.
+       Reference data tipləri isə özləri yaddaşın heap hissəində yer tuturlar. Ancaq onların pointerləri stackdə yerləşir.Yəni stack -dan heap-ə istinad olunur.
