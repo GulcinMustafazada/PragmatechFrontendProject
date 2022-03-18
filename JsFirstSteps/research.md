@@ -44,3 +44,8 @@
     - Bu mövzunu öyrənmək proqramçı olaraq sizə nə qata bilər? Yəni bu mövzunu qavramağınız sizə nə fayda verəcək?
       
       Bu mövzunun öyrənilməsi məlumat növlərinin hər daim işlətdiyimizə görə onların komputürin yaddaşında necə yer tutmasını müəyyən etmək üçün vacidbdir. Yəni kompüteri  və məlumat növlərinin qarşılıqlı şəkildə işləmə prinsipini müəyyən etməyə imkan verir.
+
+3. **NaN, null, undefined in Javascript**
+    - Bu tiplər başqa hansı dillərdə mövcuddur?
+
+     
