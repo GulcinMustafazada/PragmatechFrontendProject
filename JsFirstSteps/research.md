@@ -50,3 +50,12 @@
     
       Null digər bir neçə proqramlaşdırma dilində rast gəlinsədə, NaN və undefined ancaq Javascriptdə mövcuddur.
      
+     - NaN null və undefined bunlardan hansı data tipdir və növləri nədir? Primitive yoxsa reference tip olub olmadığı haqqında nə deyə bilərsiz?
+
+       Bunlardaan undefined həm data tip həm də dəyər ola bilir.NaN number tpindədir.Null isə object tipidir.Bunlar primitiv data tipdir.
+
+     - Type Casting metodlarından istifadə edərək bu dəyərləri çevirəndə hansı nəticələr əldə edildiyini analiz edin və bunun səbəblərini araşdırın
+  
+       Number tipinde NaN və undefined NaN olaraq nəticələnəcək.Null isə 0 olacaq.
+      String tipinde isə bu ifadələri stringə çevirəcək.
+      Boolean tipində isə null,NaN və undefined  false olacaq.
