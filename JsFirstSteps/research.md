@@ -87,3 +87,7 @@
     - scope anlayışı nədir? 
      
       scope-lar dəyişənlərin mövcudluğunu müəyyən edir.Lokal və qlobal dəyişənləri müəyyən edir. Bəzi kod ifadələrində if else for ve s scope ler önəm daşıyırlar.
+
+    - void və return function nədir? Hansı hallarda istifadə olunur
+
+     
