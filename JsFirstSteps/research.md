@@ -9,5 +9,4 @@
 
      Bu simvolların istifadəinin düzgün yerinə yetirilməməsi kodda müəyyən sintaksis xətalarına səbəb ola bilər .Yəni ki v8 engine bu kodu icra edərkən bu ardıcıl olaraq oxuyur və mötərizlərin yanlış yerdə yazılması və ya bağlanmaması xətalara səbəb olacaq və kod işləməyəcək.
      
-    - et StudentName; let studentName; let studentname yazılışları arasında Javascript üçün hər hansı fərq varmı? Qısacası Javascript Case Sensitive dildir?
-    
+    - let StudentName; let studentName; let studentname yazılışları arasında Javascript üçün hər hansı fərq varmı? Qısacası Javascript Case Sensitive dildir?
