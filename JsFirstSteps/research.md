@@ -12,3 +12,7 @@
     - let StudentName; let studentName; let studentname yazılışları arasında Javascript üçün hər hansı fərq varmı? Qısacası Javascript Case Sensitive dildir?
      
       Bunlar arasında fərq var .Çünki Javascript Case Sensitivedir.Yəni hərflərə həssasdır.Bunlar hər biri fərqli dəyişənlərdir.
+
+    - Javascriptdə kod yazarkən indentation hansı hallarda istifadə olunur və mən kod yazarkən indentation istifadə etməyə məcburammı?
+     
+     
