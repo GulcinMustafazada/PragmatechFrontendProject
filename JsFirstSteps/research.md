@@ -47,5 +47,6 @@
 
 3. **NaN, null, undefined in Javascript**
     - Bu tiplər başqa hansı dillərdə mövcuddur?
-
+    
+      Null digər bir neçə proqramlaşdırma dilində rast gəlinsədə, NaN və undefined ancaq Javascriptdə mövcuddur.
      
