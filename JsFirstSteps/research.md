@@ -74,3 +74,8 @@
     - function ümumiyyətlə nə üçün istifadə edilir?
 
       Funksiya müəyyən bir işi yerinə yetirən kod blokudur.Eyni zamanda kod təkrarının qarşısını almaq üçün də funksiyalardan istifadə olunur. Yəni bir neçə yerdə tərar istifadə edəcəyimiz kodlar üçün bir funksiya yaza bilərik onu həmin bir neçə yerdə istifadə edərik və buda kod təkrarının qarşısını alır.
+
+    - function istifadə etmənin kod yazarkən gətirdiyi faydalar
+     
+      Funksiyalar proqramı və oxunma sürətini asanlaşdırır.Kod təkrarının qarşısını alır.
+      Bir dəfə təyin edib bir neçə yerdə istifadə etmək mümükündür.
