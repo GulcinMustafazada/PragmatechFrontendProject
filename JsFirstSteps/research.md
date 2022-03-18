@@ -83,3 +83,7 @@
     - necə formada function təyin etmək olar?
      
       Funksiyanı təyin  etmək  üçün function açar sözündən istifadə olunur. Onların adlandırılması isə javascriptdə dəyişənlərin adlandırılma qaydasına əsasən aparılır.
+
+    - scope anlayışı nədir? 
+     
+      scope-lar dəyişənlərin mövcudluğunu müəyyən edir.Lokal və qlobal dəyişənləri müəyyən edir. Bəzi kod ifadələrində if else for ve s scope ler önəm daşıyırlar.
