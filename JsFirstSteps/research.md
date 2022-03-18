@@ -68,3 +68,9 @@
     - operator və expression arasında fərqlər nələrdir?
 
       Expressions hər hansı kod vahidləridir. Operatorlar isə dəyərlər üzərində müəyyən əməliyyatlar yerinə yetirmək üçün istifadə olunur.
+
+5. **Növbəti həftə üçün təyin olunan mövzu - Functions in Javascript**
+
+    - function ümumiyyətlə nə üçün istifadə edilir?
+
+      Funksiya müəyyən bir işi yerinə yetirən kod blokudur.Eyni zamanda kod təkrarının qarşısını almaq üçün də funksiyalardan istifadə olunur. Yəni bir neçə yerdə tərar istifadə edəcəyimiz kodlar üçün bir funksiya yaza bilərik onu həmin bir neçə yerdə istifadə edərik və buda kod təkrarının qarşısını alır.
