@@ -90,4 +90,4 @@
 
     - void və return function nədir? Hansı hallarda istifadə olunur
 
-     
+       return funksiyalarında ekrana nəticə qaytarılır. Void funksiyalarında isə bu yoxdur.Void primitiv dəyərləri əldə etmək üçün istifadə olunur.
