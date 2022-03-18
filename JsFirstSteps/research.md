@@ -22,3 +22,7 @@
     - let x=5; kodlarının v8engine tərəfindən tərcümə edilərək maşın dilinə çevrilmə prosesini necə təsəvüür edirsiniz?
      
       v8 engine bu kodu oxuyur və tərcümə edir.Bu prosesdə x dəyişəni üçün stack -də yer ayrılır. 5 dəyəri üçün isə heap -də yer ayrılır. Ancaq nə qədər yer ayrıldığı bəlli olmur ,yəni bu dəyəri istdəyimiz qədər artıra və azalda bilərik.
+
+    - primitive və reference data tipləri deyə iki kategoriyaya ayrılma səbəbi nə ola bilər?
+     
+     
