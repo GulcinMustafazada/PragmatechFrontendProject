@@ -64,3 +64,7 @@
     - expression deyiləndə nə başa düşməyim lazımdır?
 
       Expressions hər hansı kod vahidir.Javascriptdə kod yazmaq üçün istifadə olunan istifadə olunan ifadələrdir.
+
+    - operator və expression arasında fərqlər nələrdir?
+
+      Expressions hər hansı kod vahidləridir. Operatorlar isə dəyərlər üzərində müəyyən əməliyyatlar yerinə yetirmək üçün istifadə olunur.
