@@ -91,3 +91,7 @@
     - void və return function nədir? Hansı hallarda istifadə olunur
 
        return funksiyalarında ekrana nəticə qaytarılır. Void funksiyalarında isə bu yoxdur.Void primitiv dəyərləri əldə etmək üçün istifadə olunur.
+
+    - function icra olunduğu zaman yaddaşda necə yer tutur?
+     
+      Funksiyalar icra olduğu zaman onlar reference data type olduqları üçün yaddaşın heap hissəsində yer tuturlar.Onların adları isə dəyişənlər kimi yaddaşın stack hissəsində yer tuturlar.
