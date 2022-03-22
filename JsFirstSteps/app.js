@@ -8,23 +8,23 @@ if (x * 1 == x) {
 
 
 // //1-ci sual
-// let a = prompt();
-// let b = prompt();
-// let c = prompt();
-// if (c - b >= 0 && c - a >= 0) {
-//     if (c - b > c - a) {
-//         alert(a);
-//     } else {
-//         alert(b);
-//     }
-// } else if (c - b <= 0 && c - a <= 0) {
-//     if (c - b > c - a) {
-//         alert(b);
+let a = prompt();
+let b = prompt();
+let c = prompt();
+if (c - b >= 0 && c - a >= 0) {
+    if (c - b > c - a) {
+        alert(a);
+    } else {
+        alert(b);
+    }
+} else if (c - b <= 0 && c - a <= 0) {
+    if (c - b > c - a) {
+        alert(b);
 
-//     } else {
-//         alert(a);
-//     }
-// }
+    } else {
+        alert(a);
+    }
+}
 
 
 // let x = prompt();
