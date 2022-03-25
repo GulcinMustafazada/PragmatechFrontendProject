@@ -2,7 +2,8 @@
  1. Imperative and Declarative Approach in programming
 
   - Proqramlaşdırma dillərinin dizayn olunması deyiləndə ağlınıza nə gəlir? Yəni bir proqramlaşdırma dili necə dizayn edilə bilər?
-
+ 
+    Proqramlaşdırma dillərinin dizaynı dedikdə onalrın başa düşülən bir dildə yazılmasıdır.Yəni bu əslində nə deməkdir? İstifadəçilər hər hansı proqrama girərkən və ya onu istifadə edərkən müəyyən səhvlərə xətalara yol verə bilərlər.Ona görə də proqramlar proqramlaşdırma dilləri vasitəsilə elə dizayn olunmalıdır ki, bu səhvləri həll etmək mümkün olsun. Yəni proqramlaşdırma dilinin dizaynı müəyyən problemi həll edə bilmək məqsədilə dizayn olunmalıdır.
  2. Function in Javascript
 
   - Function necə formada təyin olunur?
