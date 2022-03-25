@@ -69,6 +69,11 @@ if (a <= b && b <= c) {
     Biz javascriptdə kod yazdığımız zaman onun icrasından öncə v8 engine bu kodlar üçün yaddaşda müəyyən bir yer ayırır. Yən ramda yer ayrılır ki, hansı ki ramda 2 hissədən ibarət olur heap və stack hissəsindən.
     Məsələn dəyişənlər stackdə onlara verilən dəyərlər isə heapdə saxlanılır. Ümumilikdə isə deyilə bilər ki sabit və metod olmayan və obyekt olmayan ifadələr stackdə,dinamik olan metodu olanlar isə heapdə saxlanılır.
   - Allocate memory-use memory- release memory ifadələri nə deməkdir?
+  
+    Yaddaş  3 mərhələdən ibarət olur.
+    Allocate memory-dəyərlər ilkin elan edildiyi zaman avtomatik olaraq Javascript yaddaşda yer ayıracaq.
+    Use memory- Yaddaşın istifadəsi dəyərlərin həmin ayrılmış yaddaşda oxunması yazılması kimi başa düşülür.
+    Release memory-Bu mərhələ ayrılmış yaddaşın artıq lazım olmadıqda buraxılması anlamına gəlir.Artıq onlar zibil qutusuna yəni garbage collectora yığılır. 
   - Static allocation vs dynamic allocation
   - garbage collection nədir?
 
