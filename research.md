@@ -17,6 +17,29 @@
 
   - imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün .Düzgün olub olmadığını yoldaşlarınızla analiz edin
 
+    Məsələn verilən 3 ədədi kiçikdən böyüyə yığmaq.
+   İmperative yanaşmada:
+   let a = 4;
+   let b = 7;
+   let c = 2;
+if (a <= b && b <= c) {
+    console.log(a, b, c);
+} else if (a <= c && c <= b) {
+    console.log(a, c, b);
+} else if (b <= a && a <= c) {
+    console.log(b, a, c);
+} else if (b <= c && c <= a) {
+    console.log(b, c, a);
+} else if (c <= a && a <= b) {
+    console.log(c, a, b);
+} else if (c <= b && b <= a) {
+    console.log(c, b, a);
+}
+
+    Declarativ yanaşmada:
+    const nums = [4, 2, 7];
+    console.log(nums.sort());
+
  2. Function in Javascript
 
   - Function necə formada təyin olunur?
