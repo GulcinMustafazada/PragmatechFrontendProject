@@ -18,6 +18,10 @@
     Ancaq bu declaration bizim yazdığımız koda uyğun deyilsə bu zaman biz function expressionsdan da istifadə edə bilərik.
   - function scope və global scope arasında fərqlər nədir?
 
+    Javascriptdə function scope lar və global scopelar vardır.
+    Function scope-Burada funksiya daxilində müəyyən edilmiş dəyişənlər ancaq bu funksiya daxilində əlçatandır.Hər bir funksiya özünə yeni bir function scope yaradır.Local dəyişənlərin də function scopeları var və onlara ancaq bu funksiya daxilində daxil olmaq olur.
+
+    Global scope-Global dəyişənlərin də qlobal scopeları vardır. Onlara hər yerdən daxil olmaq olar.Yəni qlobal dəyişənlərə javascript proqramında istənilən yerdən daxil olmaq olar.Onlar funksiya xaricində də işliyəcək.
   - function ramdə necə yer tutur?
 
     Funksiyalar dinamik olduğu üçün yəni müəyyən işi yerinə yetirdiklərinə görə ramda heap hissədə  yer tutur.
