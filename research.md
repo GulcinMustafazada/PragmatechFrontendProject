@@ -71,6 +71,9 @@ if (a <= b && b <= c) {
   - Allocate memory-use memory- release memory ifadələri nə deməkdir?
   - Static allocation vs dynamic allocation
   - garbage collection nədir?
+
+    javascriptdə müəyyən obyektlər yaradıldığı zaman onlar üçün avtomatik olaraq yaddaşda yer ayrılır. Garbage collector isə burda o işi görür ki, həmin obyektlər istifadə olunduqdan sonra  boşaldılsın yəni artıq lazım olmadığı müddətdə. Bu obyektlər zibil qutusuna yəni garbage collectora boşaldılır.
+    Bu proses isə garbage collection prosesi adlanır.
   - hoisting nədir?
   - scope və hoisting ifadələri arasında fərq nədir?
      
