@@ -62,4 +62,15 @@ if (a <= b && b <= c) {
   - function ramdə necə yer tutur?
 
     Funksiyalar dinamik olduğu üçün yəni müəyyən işi yerinə yetirdiklərinə görə ramda heap hissədə  yer tutur.
+
+3. Növbəti dərsin mövzuları üçün araşdırma sualları
+  - Javascript kodlarının arxa planda işləmə prinsipi necədir?
+
+    Biz javascriptdə kod yazdığımız zaman onun icrasından öncə v8 engine bu kodlar üçün yaddaşda müəyyən bir yer ayırır. Yən ramda yer ayrılır ki, hansı ki ramda 2 hissədən ibarət olur heap və stack hissəsindən.
+    Məsələn dəyişənlər stackdə onlara verilən dəyərlər isə heapdə saxlanılır. Ümumilikdə isə deyilə bilər ki sabit və metod olmayan və obyekt olmayan ifadələr stackdə,dinamik olan metodu olanlar isə heapdə saxlanılır.
+  - Allocate memory-use memory- release memory ifadələri nə deməkdir?
+  - Static allocation vs dynamic allocation
+  - garbage collection nədir?
+  - hoisting nədir?
+  - scope və hoisting ifadələri arasında fərq nədir?
      
