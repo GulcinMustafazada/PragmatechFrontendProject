@@ -13,7 +13,7 @@
 
   - Deklarativ yanaşma və funksiyalar arasında əlaqəni necə qura bilərsiniz?
 
-    Deklarativ kodda siz bir sıra kiçik funksiyaları götürən və onları birləşdirən funksiya kompozisiyasının qurulmasına diqqət yetirirsiniz ki, bir funksiya ardıcıl olaraq öz çıxışını sətirdəki növbəti funksiyaya giriş kimi ötürsün.
+    Deklarativ kodda biz bir sıra kiçik funksiyaları götürən və onları birləşdirən funksiya kompozisiyasının qurulmasına diqqət yetiririk ki, bir funksiya ardıcıl olaraq öz çıxışını sətirdəki növbəti funksiyaya giriş kimi ötürsün.
 
   - imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün .Düzgün olub olmadığını yoldaşlarınızla analiz edin
 
