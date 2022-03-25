@@ -86,4 +86,5 @@ if (a <= b && b <= c) {
 
     Hoisting yazdığımız kodun icrasından əvvəl funksiyaların classların elanının onların skoplarından yuxarı hissədə elan edilməsi anlamına gəlir.Hoisting edilməsi kodda müəyyən ciddi səhvlərə gətirib çıxara bilər ona görə də edilməməsi daha üstündür.
   - scope və hoisting ifadələri arasında fərq nədir?
-     
+  
+     scopelar local və global ola bilirlər və yerləri və onlara daxil olma yerləri fərqli ola bilir. Ancaq hoisting local və qlobal dəyişənlərdən scopelardan asılı olmayaraq həmişə kodu icra edəcək scopedan yuxarı hissədə yerləşirlər.
