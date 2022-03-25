@@ -7,12 +7,16 @@
 
   - Öz həyatınızda imperativ və deklarativ yanaşmaya aid nümunələr tapın
 
-    İmperativ və deklerativ yanaşma arasında müəyyən fərqlər vardır. Məsələn real həyatda buna bir nümunə olaraq hər hənsı bir yeməyin hazırlanması ardıcıllığını nümunə göstərə bilərik. İmperativ yanşma bunu tələb edirki bu ardıcıllıq pozulmasın və bu yeməyin hansı ardıcıllıqla və necə hazırlanıb nəticəyə gəlinməsi göstərilsin. Yəni yeməyin reseptini düzgün şəkildə icra olunsun.Deklarativ yanaşmada isə bu yeməyin əsas nəticə olaraq alınması üstün tutulur. Yəni həmin yemək daha sadə daha tez bir reseptlə də və ya başqa bir üsulla da hazırlana bilər əsas nəticədə yemək alınsın.
+    İmperativ və deklerativ yanaşma arasında müəyyən fərqlər vardır. Məsələn real həyatda buna bir nümunə olaraq hər hənsı bir yeməyin hazırlanması ardıcıllığını nümunə göstərə bilərik. İmperativ yanşma bunu tələb edirki bu ardıcıllıq pozulmasın və bu yeməyin hansı ardıcıllıqla və necə hazırlanıb nəticəyə gəlinməsi göstərilsin. Yəni yeməyin reseptini düzgün şəkildə icra olunsun.Deklarativ yanaşmada isə bu yeməyin əsas nəticə olaraq alınması üstün tutulur. Yəni məqsəd həmin yeməyin hazırlanmasıdır. Onun necə edilməsi yox nə edilməsidir.
+    Və ya gündəlik həyatda yerinə yetirdiyimiz işlər ,məsələn Maşına mindim, bazara getdim, yeməkləri arabama qoyub kassirə pul verdim. Burada imperativ yanaşma var yəni bu işin  necə ediləcəyi təsvir olunur. 
+    Bazara getdim ərzaq aldım. Bu isə deklarativ yanaşmadır.Yəni necə edildiyini izah etmədən nə edildiyini deyr.
 
   - Deklarativ yanaşma və funksiyalar arasında əlaqəni necə qura bilərsiniz?
 
+    Deklarativ kodda siz bir sıra kiçik funksiyaları götürən və onları birləşdirən funksiya kompozisiyasının qurulmasına diqqət yetirirsiniz ki, bir funksiya ardıcıl olaraq öz çıxışını sətirdəki növbəti funksiyaya giriş kimi ötürsün.
+
   - imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün .Düzgün olub olmadığını yoldaşlarınızla analiz edin
-  
+
  2. Function in Javascript
 
   - Function necə formada təyin olunur?
