@@ -4,6 +4,15 @@
   - Proqramlaşdırma dillərinin dizayn olunması deyiləndə ağlınıza nə gəlir? Yəni bir proqramlaşdırma dili necə dizayn edilə bilər?
  
     Proqramlaşdırma dillərinin dizaynı dedikdə onalrın başa düşülən bir dildə yazılmasıdır.Yəni bu əslində nə deməkdir? İstifadəçilər hər hansı proqrama girərkən və ya onu istifadə edərkən müəyyən səhvlərə xətalara yol verə bilərlər.Ona görə də proqramlar proqramlaşdırma dilləri vasitəsilə elə dizayn olunmalıdır ki, bu səhvləri həll etmək mümkün olsun. Yəni proqramlaşdırma dilinin dizaynı müəyyən problemi həll edə bilmək məqsədilə dizayn olunmalıdır.
+
+  - Öz həyatınızda imperativ və deklarativ yanaşmaya aid nümunələr tapın
+
+    İmperativ və deklerativ yanaşma arasında müəyyən fərqlər vardır. Məsələn real həyatda buna bir nümunə olaraq hər hənsı bir yeməyin hazırlanması ardıcıllığını nümunə göstərə bilərik. İmperativ yanşma bunu tələb edirki bu ardıcıllıq pozulmasın və bu yeməyin hansı ardıcıllıqla və necə hazırlanıb nəticəyə gəlinməsi göstərilsin. Yəni yeməyin reseptini düzgün şəkildə icra olunsun.Deklarativ yanaşmada isə bu yeməyin əsas nəticə olaraq alınması üstün tutulur. Yəni həmin yemək daha sadə daha tez bir reseptlə də və ya başqa bir üsulla da hazırlana bilər əsas nəticədə yemək alınsın.
+
+  - Deklarativ yanaşma və funksiyalar arasında əlaqəni necə qura bilərsiniz?
+
+  - imperative və deklarative yanaşmaya aid kod nümunələri yazın özünüz üçün .Düzgün olub olmadığını yoldaşlarınızla analiz edin
+  
  2. Function in Javascript
 
   - Function necə formada təyin olunur?
