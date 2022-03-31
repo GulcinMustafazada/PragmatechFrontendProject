@@ -19,3 +19,5 @@ let students = [{
     soyad: 'Sadiqzade',
     yas: 60
 }]
+
+console.log(`Ad:${students[0][value]}, Soyad:${students[1][1]},Yaş:${students[2]}`)
