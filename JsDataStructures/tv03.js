@@ -19,5 +19,7 @@ let students = [{
     soyad: 'Sadiqzade',
     yas: 60
 }]
+for (i = 0; i < 5; i++) {
 
-console.log(`Ad:${students[0][value]}, Soyad:${students[1][1]},Yaş:${students[2]}`)
+    console.log(`Ad:${students[i]["ad"]}, Soyad:${students[i]["soyad"]},Yaş:${students[i]["yas"]}`)
+}
