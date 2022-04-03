@@ -9,4 +9,5 @@
    3. [ProductFeedbackUI](https://github.com/GulcinMustafazada/PragmatechFrontendProject/tree/master/ProductFeedbackUI)
    4. [ProductFeedbackUIResponsive](https://github.com/GulcinMustafazada/PragmatechFrontendProject/tree/master/ProductFeedbackUIResponsive)
    5. [JsFirstSteps](https://github.com/GulcinMustafazada/PragmatechFrontendProject/tree/master/JsFirstSteps)
+   6. [JsDataStructures](https://github.com/GulcinMustafazada/PragmatechFrontendProject/tree/master/JsDataStructures)
    
