@@ -88,3 +88,15 @@ if (a <= b && b <= c) {
   - scope və hoisting ifadələri arasında fərq nədir?
   
      scopelar local və global ola bilirlər və yerləri və onlara daxil olma yerləri fərqli ola bilir. Ancaq hoisting local və qlobal dəyişənlərdən scopelardan asılı olmayaraq həmişə kodu icra edəcək scopedan yuxarı hissədə yerləşirlər.
+
+---
+ ### Funksiyalar
+  
+   1.  void və return function nədir?
+
+        return funksiyalar hər hansı bir dəyər qaytaran funksiyalara deyilir. Yəni return funksiyalar funksiyanın bitdiyini təyin edir və qaytarılacaq dəyəri göstərir.
+        Void funksiyaları isə heç bir dəyər qaytaran funksiyalar deyillər.
+
+  2. return keyword-unun var olma məqsədi nədir?
+       
+        
