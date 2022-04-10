@@ -99,4 +99,4 @@ if (a <= b && b <= c) {
 
   2. return keyword-unun var olma məqsədi nədir?
        
-        
+        return açar sözü funksiyanın bitdiyini elan edir və eyni zamanda qaytarılacaq dəyəri göstərir.
