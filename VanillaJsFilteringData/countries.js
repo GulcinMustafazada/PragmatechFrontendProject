@@ -1,4 +1,4 @@
- countries = {
+ let countries = {
      Afghanistan: [
          "Herat",
          "Kabul",
@@ -306,8 +306,10 @@
      ]
  };
 
+ function ShowCountriesNames() {
+     for (i = 0; i <= countries.length; i++) {
 
- for (i = 0; i <= countries.length; i++) {
-
-     console.log(i)
+         console.log(countries[i])
+     }
  }
+ ShowCountriesNames();

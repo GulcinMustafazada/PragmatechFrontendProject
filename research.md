@@ -19,7 +19,7 @@
 
     Məsələn verilən 3 ədədi kiçikdən böyüyə yığmaq.
    İmperative yanaşmada:
-   let a = 4;
+  <code> let a = 4;
    let b = 7;
    let c = 2;
 if (a <= b && b <= c) {
@@ -34,7 +34,7 @@ if (a <= b && b <= c) {
     console.log(c, a, b);
 } else if (c <= b && b <= a) {
     console.log(c, b, a);
-}
+} </code>
 
     Declarativ yanaşmada:
     const nums = [4, 2, 7];
@@ -100,3 +100,9 @@ if (a <= b && b <= c) {
   2. return keyword-unun var olma məqsədi nədir?
        
         return açar sözü funksiyanın bitdiyini elan edir və eyni zamanda qaytarılacaq dəyəri göstərir.
+  
+  3. block scope vs function scope vs global scope fərqlər nədir?
+
+     global scopeda yaradılan dəyişənləri hər yerdə çağırmaq olur. Onlar həm funksiyanın xaricində həm də daxilində işləyirlər.
+    Function scopde isə ancaq funksiyanın daxilində çağırılır və funksiyanın xaricində işləmirlər.
+    Block scope-da təyin olunan dəyişənlər isə ancaq həmin blok daxilində təyin oluna və çağırıla bilər.
