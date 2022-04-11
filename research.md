@@ -106,3 +106,4 @@ if (a <= b && b <= c) {
      global scopeda yaradılan dəyişənləri hər yerdə çağırmaq olur. Onlar həm funksiyanın xaricində həm də daxilində işləyirlər.
     Function scopde isə ancaq funksiyanın daxilində çağırılır və funksiyanın xaricində işləmirlər.
     Block scope-da təyin olunan dəyişənlər isə ancaq həmin blok daxilində təyin oluna və çağırıla bilər.
+    .
