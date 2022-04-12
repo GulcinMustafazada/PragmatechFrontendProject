@@ -30,3 +30,16 @@ Although the SOLID design principles were first introduced by the famous Compute
 //     return wordcount;
 // }
 // console.log(GetWordsCount())
+
+//5-ci tapsiriq
+function GetLetterCount() {
+    count = 0;
+    for (let i in sampleNews) {
+        if (i == " ") {
+            count++;
+        }
+    }
+    return count;
+
+}
+console.log(GetLetterCount());
