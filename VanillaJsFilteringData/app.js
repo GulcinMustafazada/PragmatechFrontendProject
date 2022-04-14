@@ -43,3 +43,4 @@ Although the SOLID design principles were first introduced by the famous Compute
 
 // }
 // console.log(GetLetterCount());
+//6-ci tapsiriq
