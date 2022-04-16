@@ -13,3 +13,6 @@
    
 
 [My HackerRank Profile](https://www.hackerrank.com/gulcinmustafaza2?hr_r=1)
+
+
+Mediumda məqalə
