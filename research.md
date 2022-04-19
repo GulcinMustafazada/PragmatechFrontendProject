@@ -107,3 +107,11 @@ if (a <= b && b <= c) {
     Function scopde isə ancaq funksiyanın daxilində çağırılır və funksiyanın xaricində işləmirlər.
     Block scope-da təyin olunan dəyişənlər isə ancaq həmin blok daxilində təyin oluna və çağırıla bilər.
     
+
+---
+
+## HTML / CSS / JS Araşdırma Sualları
+
+  - Sual 01 -HTML daxilində olan elementləri seçərkən hansı DOM metodlarından istifadə olunur?
+     
+     HTML daxilində olan elementləri seçmək üçün document.querySelector() və ya document.querySelectorAll() methodlarından istifadə olunur.
