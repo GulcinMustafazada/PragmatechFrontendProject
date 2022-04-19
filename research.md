@@ -114,4 +114,15 @@ if (a <= b && b <= c) {
 
   - Sual 01 -HTML daxilində olan elementləri seçərkən hansı DOM metodlarından istifadə olunur?
      
-     HTML daxilində olan elementləri seçmək üçün document.querySelector() və ya document.querySelectorAll() methodlarından istifadə olunur.
+     HTML daxilində olan elementləri seçmək üçün element.querySelector() və ya document.querySelectorAll(), getElementById(),
+     getElementsByClassName(),
+     getElementsByTagName() methodlarından istifadə olunur.
+
+  - Sual 02 -DOM Traversing nədir? Nümunələr ilə izah edin.
+     
+    DOM traversing -html statik olur və biz bəzən onu interaktiv hala gətirmək istəyirik.Yəni bəzi HTML elemntlərini hərəkətli hala gətirmək istiyirik. Bu isə sadəcə HTML ilə mümükün deyildir. Bunu yerinə yetirmək üçün DOM-dan istifadə olunur.Yəni DOM Html sənədini Javascriptə keçirmək üçün bir interfeysdir. DOM traversing isə HTML elemntlərinə keçmək və ya bir elementdən digərinə keçid elemek mənasını verir.Məsələn HTML dəki yuxarıda olan yəni parent elementdə child elementə keçidi buna nümunə göstərmək olar.Eyni zamanda əksi də mümkündür.
+
+     
+     <img src="/Users/Aze/OneDrive/İş masası/img1.png">
+     <img src="/Users/Aze/OneDrive/İş masası/img2.png">
+     
