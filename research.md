@@ -112,7 +112,7 @@ if (a <= b && b <= c) {
 
 ## HTML / CSS / JS Araşdırma Sualları
 
-  - Sual 01 -HTML daxilində olan elementləri seçərkən hansı DOM metodlarından istifadə olunur?
+  - Sual 06 -HTML daxilində olan elementləri seçərkən hansı DOM metodlarından istifadə olunur?
      
      HTML daxilində olan elementləri seçmək üçün element.querySelector() və ya document.querySelectorAll(), getElementById(),
      getElementsByClassName(),
@@ -126,3 +126,12 @@ if (a <= b && b <= c) {
      <img src="/Users/Aze/OneDrive/İş masası/img1.png">
      <img src="/Users/Aze/OneDrive/İş masası/img2.png">
      
+  - Sual 01 -JavaScript nədir və necə işləyir?
+
+     Javascript web üçün bir skript dildir və brauzerdə işləyir. Javascript HTML və CSS ilə yaratdığımız səhifələri daha dinamik hala gətirmək üçün istifadə olunan  bir proqramlşadırma dilidir.
+      İlk oncə brauzer veb səhifəni yükləyir və onun HTML hissəini təhlil edir və daha sonra    onu DOM a çevirir. HTML CSS kodları yüklənib tamamlandıqdan sonra V8 engine yəni javascript mühərikki javascript kodlarını sırayla oxuyub təhlil edir  və icra edir. Bu, DOM-un JavaScript kodu ilə yenilənməsi və brauzer tərəfindən göstərilməsi ilə nəticələnir.
+
+  - Sual 03 -DOM Element və DOM Node arasındakı fərq nədir?
+
+      
+    
