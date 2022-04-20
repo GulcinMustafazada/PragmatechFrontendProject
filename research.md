@@ -112,12 +112,16 @@ if (a <= b && b <= c) {
 
 ## HTML / CSS / JS Araşdırma Sualları
 
-  - Sual 06 -HTML daxilində olan elementləri seçərkən hansı DOM metodlarından istifadə olunur?
-     
-     HTML daxilində olan elementləri seçmək üçün element.querySelector() və ya document.querySelectorAll(), getElementById(),
-     getElementsByClassName(),
-     getElementsByTagName() methodlarından istifadə olunur.
+  
 
+
+     
+  - Sual 01 -JavaScript nədir və necə işləyir?
+
+     Javascript web üçün bir skript dildir və brauzerdə işləyir. Javascript HTML və CSS ilə yaratdığımız səhifələri daha dinamik hala gətirmək üçün istifadə olunan  bir proqramlşadırma dilidir.
+      İlk oncə brauzer veb səhifəni yükləyir və onun HTML hissəini təhlil edir və daha sonra    onu DOM a çevirir. HTML CSS kodları yüklənib tamamlandıqdan sonra V8 engine yəni javascript mühərikki javascript kodlarını sırayla oxuyub təhlil edir  və icra edir. Bu, DOM-un JavaScript kodu ilə yenilənməsi və brauzer tərəfindən göstərilməsi ilə nəticələnir.
+    
+  
   - Sual 02 -DOM Traversing nədir? Nümunələr ilə izah edin.
      
     DOM traversing -html statik olur və biz bəzən onu interaktiv hala gətirmək istəyirik.Yəni bəzi HTML elemntlərini hərəkətli hala gətirmək istiyirik. Bu isə sadəcə HTML ilə mümükün deyildir. Bunu yerinə yetirmək üçün DOM-dan istifadə olunur.Yəni DOM Html sənədini Javascriptə keçirmək üçün bir interfeysdir. DOM traversing isə HTML elemntlərinə keçmək və ya bir elementdən digərinə keçid elemek mənasını verir.Məsələn HTML dəki yuxarıda olan yəni parent elementdə child elementə keçidi buna nümunə göstərmək olar.Eyni zamanda əksi də mümkündür.
@@ -125,12 +129,6 @@ if (a <= b && b <= c) {
      
      <img src="/Users/Aze/OneDrive/İş masası/img1.png">
      <img src="/Users/Aze/OneDrive/İş masası/img2.png">
-     
-  - Sual 01 -JavaScript nədir və necə işləyir?
-
-     Javascript web üçün bir skript dildir və brauzerdə işləyir. Javascript HTML və CSS ilə yaratdığımız səhifələri daha dinamik hala gətirmək üçün istifadə olunan  bir proqramlşadırma dilidir.
-      İlk oncə brauzer veb səhifəni yükləyir və onun HTML hissəini təhlil edir və daha sonra    onu DOM a çevirir. HTML CSS kodları yüklənib tamamlandıqdan sonra V8 engine yəni javascript mühərikki javascript kodlarını sırayla oxuyub təhlil edir  və icra edir. Bu, DOM-un JavaScript kodu ilə yenilənməsi və brauzer tərəfindən göstərilməsi ilə nəticələnir.
-
   - Sual 03 -DOM Element və DOM Node arasındakı fərq nədir?
 
   - Sual 04-
@@ -143,4 +141,8 @@ HTML daxilində olan bir elementi kopyalayaraq başqa bir elementin daxilinə ye
 
   HTML sənədində mövcud elemnetin kopyasını yaratmaq üçün .cloneNode() metodundan istifadə etmək lazımdır.Əgər metodun içərisinə boolean dəyəri olaraq true yazsaq yəni element.cloneNode(true) həmin elementin daxilində olan bütün elemtləri də kopyalayacaq ,ancaq təkcə həmin elemnti copy etmək istiyiriksə onda false yazırıq,yəni element.cloneNode(false).
 
-    
+ - Sual 06 -HTML daxilində olan elementləri seçərkən hansı DOM metodlarından istifadə olunur?
+     
+     HTML daxilində olan elementləri seçmək üçün element.querySelector() və ya document.querySelectorAll(), getElementById(),
+     getElementsByClassName(),
+     getElementsByTagName() methodlarından istifadə olunur.
