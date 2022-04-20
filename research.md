@@ -133,5 +133,14 @@ if (a <= b && b <= c) {
 
   - Sual 03 -DOM Element və DOM Node arasındakı fərq nədir?
 
-      
+  - Sual 04-
+HTML daxilində var olan hər hansı elementi silmək üçün nə etmək lazımdır?
+
+     HTML sənədində olan hər hansı bir elementi silmək üçün .removeChoild() metodundan istifadə etmək olar.
+
+- Sual 05 -
+HTML daxilində olan bir elementi kopyalayaraq başqa bir elementin daxilinə yerləşdirmək üçün nə etmək lazımdır?
+
+  HTML sənədində mövcud elemnetin kopyasını yaratmaq üçün .cloneNode() metodundan istifadə etmək lazımdır.Əgər metodun içərisinə boolean dəyəri olaraq true yazsaq yəni element.cloneNode(true) həmin elementin daxilində olan bütün elemtləri də kopyalayacaq ,ancaq təkcə həmin elemnti copy etmək istiyiriksə onda false yazırıq,yəni element.cloneNode(false).
+
     
