@@ -8,20 +8,23 @@ function createMultipleCircle(
     // _selector -> yaradılan dairənin html daxilində hansı elementin daxilinə əlavə ediləcəyini müəyyən edəcək.Yəni '.box' argumenti daxil edildiyi zaman yaranan dairə .box adlı elementin daxilinə əlavə ediləcək
     // _radius->yaradılacaq dairələrdən ən böyük dariənin radiusu daxil ediləcək ədəd olaraq
     // _backgroundColor->yaradılacaq dairənin arxafon rəngi daxil ediləcək string olaraq
-    let circleContainer = document.createElement('div');
-    circleContainer.className = 'circle-container';
-    document.body.appendChild(circleContainer);
-    let circle = document.createElement('div');
-    circle.className = 'circle';
-    circleContainer.appendChild(circle);
-    circle.style.width = `${_radius*2}px`;
-    circle.style.height = `${_radius*2}px`;
-    circle.style.backgroundColor = `${ _backgroundColor }`;
-
-    circle.style.borderRadius = '100%';
-    for (let i = 0; i <= _circleCount; i++) {
-        let circle1 = document.createElement('div');
+    let circleContainer = document.createElement('div')
+    circleContainer.className = 'circle-container'
+    document.body.appendChild(circleContainer)
+    let circle = document.createElement('div')
+    circle.className = 'circle'
+    circleContainer.appendChild(circle)
+    circle.style.width = `${_radius*2}px`
+    circle.style.height = `${_radius*2}px`
+    circle.style.backgroundColor = `${ _backgroundColor }`
+    document.querySelector(`${_selector}`).appendChild(circle)
+    circle.style.borderRadius = '100%'
+    for (let i = _radius; i <= _radius; i--) {
+        let innercircle = document.createElement('div');
+        circle.appendChild(innercircle)
+        innercircle.style.width = `${_radius-'10px'}`
+        innercircle.style.height = `${_radius-'10px'}`
     };
 
 }
-createMultipleCircle(1, 2, 50, 'red')
+createMultipleCircle('.circle-container', 2, 50, 'red')
