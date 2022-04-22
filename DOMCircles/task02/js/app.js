@@ -19,12 +19,13 @@ function createMultipleCircle(
     circle.style.backgroundColor = `${ _backgroundColor }`
     document.querySelector(`${_selector}`).appendChild(circle)
     circle.style.borderRadius = '100%'
-    for (let i = _radius; i <= _radius; i--) {
+    for (let i = 0; i <= _circleCount; i++) {
         let innercircle = document.createElement('div');
         circle.appendChild(innercircle)
-        innercircle.style.width = `${_radius-'10px'}`
-        innercircle.style.height = `${_radius-'10px'}`
+        innercircle.style.width = `${_radius/2}px`
+        innercircle.style.height = `${_radius/2}p`
     };
 
+
 }
-createMultipleCircle('.circle-container', 2, 50, 'red')
+createMultipleCircle('.circle-container', 3, 50, 'red')
