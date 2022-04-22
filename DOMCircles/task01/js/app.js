@@ -8,9 +8,9 @@ function createCircle(_selector, _radius, _backgroundColor) {
     circle.style.width = `${_radius*2}px`
     circle.style.height = `${_radius*2}px`
     circle.style.backgroundColor = `${ _backgroundColor }`
-
+    document.querySelector(`${_selector}`).appendChild(circle)
     circle.style.borderRadius = '100%'
-    let
+
 
 }
-createCircle(1, 30, 'green')
+createCircle('.circle-container', 30, ' green ')

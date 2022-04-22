@@ -1,0 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.circle {
+    margin: 50px auto;
+}
