@@ -4,7 +4,7 @@ function randomCirclePlacement() {
     let circle = document.createElement('div')
     circle.className = 'circle'
     document.body.appendChild(circle)
-    Qq
+
     circle.style.width = '10px'
     circle.style.height = '10px'
     circle.style.borderRadius = '50%'
