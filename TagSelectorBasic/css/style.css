@@ -37,7 +37,7 @@
     
     .movies-item {
         border: 1px solid black;
-        padding: 15px 20px;
+        padding: 13px 20px;
         margin: 7px;
         border-radius: 5px;
         border: 1px solid hsl(177, 71%, 84%);
@@ -46,4 +46,26 @@
     
     .movies-item p {
         font-size: 18px;
+    }
+    
+    .movie-tags {
+        width: 100%;
+        height: 117px;
+        background-color: rgb(245, 252, 252);
+        border-radius: 10px;
+        padding-top: 35px;
+    }
+    
+    .own-tag {
+        border-radius: 5px;
+        border: 1px solid hsl(177, 71%, 84%);
+        background-color: white;
+        width: 600px;
+        padding: 10px 10px;
+        margin-left: 60px;
+    }
+    
+    .own-tag p {
+        font-size: 20px;
+        color: rgb(187, 182, 182);
     }
