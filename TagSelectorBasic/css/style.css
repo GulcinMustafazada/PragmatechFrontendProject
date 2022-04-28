@@ -40,12 +40,37 @@
         padding: 13px 20px;
         margin: 7px;
         border-radius: 5px;
+        display: flex;
         border: 1px solid hsl(177, 71%, 84%);
         background-color: rgb(245, 252, 252);
+        transition: all .3s ease;
+    }
+    
+    .icon {
+        border-radius: 50%;
+        border: 1px solid #fff;
+        padding: 0px 5px;
+        margin-left: 10px;
+        display: none;
+    }
+    
+    .icon i {
+        color: #fff;
+        font-size: 10px;
     }
     
     .movies-item p {
-        font-size: 18px;
+        font-size: 16px;
+    }
+    
+    .movies-item:hover {
+        background-color: hsl(177, 58%, 70%);
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    .movies-item:hover .icon {
+        display: block;
     }
     
     .movie-tags {
