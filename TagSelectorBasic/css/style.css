@@ -25,7 +25,6 @@
     }
     
     .movies {
-        border: 1px solid blue;
         width: 630px;
         margin: 40px auto;
         height: 200px;
@@ -38,4 +37,13 @@
     
     .movies-item {
         border: 1px solid black;
+        padding: 15px 20px;
+        margin: 7px;
+        border-radius: 5px;
+        border: 1px solid hsl(177, 71%, 84%);
+        background-color: rgb(245, 252, 252);
+    }
+    
+    .movies-item p {
+        font-size: 18px;
     }
