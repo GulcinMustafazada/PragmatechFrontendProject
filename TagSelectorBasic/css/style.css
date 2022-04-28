@@ -1,0 +1,41 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: hsl(177, 58%, 70%);
+    }
+    
+    .container {
+        width: 750px;
+        height: 500px;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    .container-title {
+        padding: 65px 60px 0px 60px;
+    }
+    
+    .container-title h2 {
+        color: black;
+    }
+    
+    .movies {
+        border: 1px solid blue;
+        width: 630px;
+        margin: 40px auto;
+        height: 200px;
+    }
+    
+    .movies-items {
+        width: 100%;
+        display: flex;
+    }
+    
+    .movies-item {
+        border: 1px solid black;
+    }
