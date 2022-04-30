@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(17, 17, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+.bgswitcher {
+    display: flex;
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button i {
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+p {
+    font-size: 34px;
+    font-weight: 700;
+}
