@@ -60,18 +60,16 @@
     }
     
     .movies-item p {
-        font-size: 16px;
+        font-size: 15px;
     }
-    
-    .movies-item:hover {
+    /* .movies-item:hover {
         background-color: hsl(177, 58%, 70%);
         cursor: pointer;
         color: #fff;
-    }
-    
-    .movies-item:hover .icon {
+    } */
+    /* .movies-item:hover .icon {
         display: block;
-    }
+    } */
     
     .movie-tags {
         width: 100%;
